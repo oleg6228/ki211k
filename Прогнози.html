@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oscars</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link rel="icon"  href="фото\2.png">
+   <style >
+     .menu {
+    position: fixed; /* Фиксированное положение */
+    right: -3px; /* Расстояние от правого края окна браузера */
+    top: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 60px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+     z-index: 1;
+
+   }
+     .a7{
+      position: fixed;
+    top: 17px;
+    right: 240px;
+    width: 840px; /* Ширина таблицы */
+    background: #483D8B; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    font-family: corbel;
+    font-size: 19px;
+    z-index: 14;
+   }
+   .a8{
+    background:  #483D8B; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+   .a4{
+  margin-top: 160px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a2{
+  position: fixed;
+  top: 9px;
+  left: 45px;
+  z-index: 12;
+}
+.a3{
+  position: absolute;
+  top: 88px;
+  left: 445px;
+}
+.a1{
+  position: absolute;
+  top: 75px;
+  left: 510px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+}
+.a5{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+    width: 540px;
+    height: 360px;
+    object-fit: contain;
+    transition: filter 0.2s linear 0s;
+    max-height: auto;
+    max-height: none;
+    min-width: auto;
+    }
+    .a9{
+      position: absolute;
+      top: 185px;
+      left: 665px;
+     width: 600px;
+     height: 250px;
+    font-family: calibri;
+    font-size: 22px;
+    line-height: 1.5;
+    }
+
+
+
+  a {
+  text-decoration: none;
+}
+
+   .a22{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+
+    .a76 {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a76:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a76:hover {
+    color: #808080; /* Цвет ссылки при наведении */
+   }
+    .a77 {
+    color: #4682B4; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a77:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a77:hover {
+    color: #000080; /* Цвет ссылки при наведении */
+   }
+     .a48 {
+    position: absolute; /* Фиксированное положение */ /* Расстояние от правого края окна браузера */
+    top: 1330px;
+    right: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 150px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+    .a49{
+      position: absolute;
+    top: 1360px;
+    left: 45px;
+    width: 95%;
+    height: 80px;
+    color: #DCDCDC;
+  }
+ .a41{
+      position: absolute;
+    top: 220px;
+    left: 120px;
+    width: 1160px;
+    height: 200px;
+  }
+  .a42{
+      position: absolute;
+    top: 1070px;
+    left: 120px;
+    width: 1160px;
+    height: 200px;
+  }
+  .a43{
+      position: absolute;
+    top: 1030px;
+    left: 320px;
+    width: 860px;
+    height: 200px;
+  }
+   .kkk {
+    color: #4682B4; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .kkk:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .kkk:hover {
+    color: #000080; /* Цвет ссылки при наведении */
+   }
+     .a37{
+     position: absolute;
+   top: 270px;
+  left: 100px;
+  font-size: 30px;
+  font-family: cambria;
+  color:  #c79f27;
+   }
+   .a38{
+  position: absolute;
+ top: 300px;
+  left: 70px;
+}
+ .progress{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 180px;
+  left: 70px;
+}
+
+.progress::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ЗЕМЛЯ КОЧІВНИКІВ ~ 1.30*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:90%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresss{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 200px;
+  left: 70px;
+}
+
+.progresss::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'СУД НАД ЧИКАГСЬКОЮ СІМКОЙ ~ 6.45';// hrere you should add the text
+  top:0;
+  left:0;
+  width:80%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progressss{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 174px;
+  left: 480px;
+}
+
+.progressss::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'МАНК ~ 13*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:60%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresssss{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 195px;
+  left: 70px;
+}
+
+.progresssss::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ПЕРСПЕКТИВНА ДІВЧИНА ~ 9.90​*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:75%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progressssss{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 72px;
+  left: 480px;
+}
+
+.progressssss::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'МІНАРІ ~ 12.50*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:65%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresssssss{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 140px;
+  left: 480px;
+}
+
+.progresssssss::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ІУДА І ЧОРНИЙ МЕССІЯ ~ 16*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:55%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progressssssss{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 20px;
+  left: 890px;
+}
+
+.progressssssss::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ЗВУК МЕТАЛА ~ 51*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:40%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresssssssss{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 40px;
+  left: 890px;
+}
+
+.progresssssssss::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'БАТЬКО ~ 67*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:30%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+  .a39{
+     position: absolute;
+   top: 605px;
+  left: 100px;
+  font-size: 20px;
+  font-family: cambria;
+  color:  #c79f27;
+   }
+   .a40{
+  position: absolute;
+ top: 620px;
+  left: 70px;
+}
+ .progress1{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 270px;
+  left: 70px;
+}
+
+.progress1::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ЧЕДВІК БОУЗМАН - (МА РЕЙНІ: МАТИ БЛЮЗУ ) ~ 1.07*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:95%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progress2{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 290px;
+  left: 70px;
+}
+
+.progress2::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ЕНТОНІ ХОПКІНС - (БАТЬКО) ~ 7*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:85%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progress3{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 310px;
+  left: 70px;
+}
+
+.progress3::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'РІЗ АХМЕД - (ЗВУК МЕТАЛА) ~ 9*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:82%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progress4{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 330px;
+  left: 70px;
+}
+
+.progress4::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'СТІВЕН ЯН - (МІНАРІ) ~ 21*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:70%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progress5{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 350px;
+  left: 70px;
+}
+
+.progress5::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ГЕРІ ОЛДМЕН - (МАНК) ~ 26*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:62%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+  .s41{
+     position: absolute;
+   top: 605px;
+  left: 520px;
+  font-size: 20px;
+  font-family: cambria;
+  color:  #c79f27;
+   }
+   .s42{
+  position: absolute;
+ top: 620px;
+  left: 490px;
+}
+ .progressssss1{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 135px;
+  left: 480px;
+}
+
+.progressssss1::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'КЕРІ МАЛІГАН - (ПЕРСПЕКТИВНА ДІВЧИНА) ~ 1.57*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:95%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progressssss2{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 155px;
+  left: 480px;
+}
+
+.progressssss2::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'АНДРА ДЕЙ - (США ПРОТИ БІЛЛІ ХОЛІДЕЙ ~ 5*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:90%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progressssss3{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 175px;
+  left: 480px;
+}
+
+.progressssss3::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ФРЭНСІС МАКДОРМЕНД (ЗЕМЛЯ КОЧІВНИКІВ) ~ 5.50*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:87%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progressssss4{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 195px;
+  left: 480px;
+}
+
+.progressssss4::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ВІОЛА ДЕВІС - (МА РЕЙНІ: МАТИ БЛЮЗУ) ~ 9*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:80%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progressssss5{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 215px;
+  left: 480px;
+}
+
+.progressssss5::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ВАНЕСА КІРБІ - (ФРАГМЕНТИ ЖІНКИ) ~ 11*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:77%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+  .ss41{
+     position: absolute;
+   top: 605px;
+  left: 920px;
+  font-size: 20px;
+  font-family: cambria;
+  color:  #c79f27;
+   }
+   .ss42{
+  position: absolute;
+ top: 620px;
+  left: 890px;
+}
+ .progresssssssss1{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 0px;
+  left: 890px;
+}
+
+.progresssssssss1::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ХЛОЯ ЧЖАО - (ЗЕМЛЯ КОЧІВНИКІВ) ~ 1.17*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:96%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresssssssss2{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 20px;
+  left: 890px;
+}
+
+.progresssssssss2::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ДЕВІД ФІНЧЕР - (МАНК) ~ 7.50*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:90%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresssssssss3{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 40px;
+  left: 890px;
+}
+
+.progresssssssss3::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ЛІ ІСААК ЧАН - (МІНАРІ) ~ 13*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:84%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresssssssss4{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 60px;
+  left: 890px;
+}
+
+.progresssssssss4::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ЕМЕРАЛД ФЕННЕЛ - (ПЕРСПЕКТИВНА ДІВЧИНА  ~ 18';// hrere you should add the text
+  top:0;
+  left:0;
+  width:79%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+ .progresssssssss5{
+  height:27px;
+  width:380px;
+  background-color:#DCDCDC;
+  position:relative;
+  top: 80px;
+  left: 890px;
+}
+
+.progresssssssss5::before{
+  position:absolute;
+  height:27px;
+  background:#483D8B;
+  content:'ТОМАС ВІНТЕРБЕРГ - (ЩЕ ПО ОДНІЙ) ~ 21*';// hrere you should add the text
+  top:0;
+  left:0;
+  width:75%;
+  display:flex;
+  color:white;
+  align-items:center;
+  font-size: 12px;
+  font-family: cambria;
+  justify-content:left;
+
+  padding-right:10px;
+}
+
+.a51{ /* Цвет фона ячеек */
+
+         font-family: cambria;
+}
+ .a77 {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a77:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a77:hover {
+    color: #808080; /* Цвет ссылки при наведении */
+   }
+
+
+
+ #topNubex {
+  position: fixed;
+  right: 10px;
+  bottom: 45px;
+   }
+   .scale {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+    position: absolute;
+  top: 515px;
+  left: 540px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 7px;
+   }
+   .scale:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+    .scale2 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+    position: absolute;
+  top: 920px;
+  left: 110px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 7px;
+   }
+   .scale2:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+    .scale3 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+  position: absolute;
+  top: 920px;
+  left: 525px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 7px;
+   }
+   .scale3:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale4 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+    position: absolute;
+  top: 920px;
+  left: 940px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 7px;
+   }
+   .scale4:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+	 .auth{
+		 position: fixed;
+		top: 24px;
+		right: 140px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+		text-decoration: underline;
+	 }
+	 .dyb{
+		position: fixed;
+		top: 20px;
+		right: 185px;
+		z-index: 14;
+	 }
+	.reest{
+		position: fixed;
+	 top: 24px;
+	 right: 16px;
+	 background: #483D8B; /* Цвет фона таблицы */
+	 color: black; /* Цвет текста */
+	 border-spacing: 0px; /* Расстояние между ячейками */
+	 font-family: pt sans,Arial,Helvetica,sans-serif;
+	 font-size: 18px;
+	 z-index: 14;
+	 text-decoration: underline;
+	}
+	.slesh{
+		 position: fixed;
+		top: 7px;
+		right: 132px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+ }
+   </style>
+
+</head>
+<body>
+<div class="menu"></div>
+<body>
+ <table class="a7">
+   <tr><th class="a8"><a href="головна.html"><font color="white" >ОСКАР</font></a></th>
+   <th class="a8" ><a href="головна%20-%20копия.html" ><Font color="white" class="a76">НОМІНАНТИ</Font></a></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия%20-%20копия.html"><font color="white" class="a76">НОВИНИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2).html"><font color="white" >ДЕ і КОЛИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия.html"><font color="white" >ДИВИТИСЬ</font></th>
+   <th class="a8"><a href="фільми.html"><font color="white" class="a76">ФІЛЬМИ</font></th>
+   <th class="a8"><a href="Прогнози.html"><font color="#c79f27" >ПРОГНОЗИ</font></th></tr>
+  </table>
+  <p class="a1">ПРОГНОЗИ БУКМЕКЕРІВ</p>
+  <img src="фото\1.png" class="a2">
+    <img src="фото\2.png" class="a3">
+ <hr class="a4">
+ <a href="http://localhost:82/php/" class="auth"><font color="#000000">ВХІД</font></a>
+ <img src="фото\dyb.png" width="25px" class="dyb">
+ <a href="http://localhost:82/php2/" class="reest"><font color="#000000">РЕЄСТРАЦІЯ</font></a>
+<p class="slesh">/</p>
+   <div class="a48"></div>
+   <div class="a49"><p class="a22" align="center"><font size="3px"><a href="головна.html"><font color="white" size="4px">© Oscars</font></a> - сайт Американської премії кінематографічних мистецтв і наук (Academy Awards) в Україні, з 1939 року відомиї як «Оскар». Всі матеріали розміщені на сайті Оscars взяті з відкритих джерел і представлені відвідувачам виключно в ознайомлювальних цілях. <a href="https://www.oscars.org/"><font color="white" size="4">www.oscars.org</font></a> - офіційний сайт Американської кіноакадемії | <a href="https://www.oscars.org/oscars/ceremonies/2022"><font color="white" size="4px">www.oscar.go.com </font></a> - офіційний сайт останньої церемонії «Оскар».</font></p></div>
+  <div class="a41"><p class="a22" align="left">На цій сторінці можна не тільки стежити за актуальними прогнозами букмекерів, але і зробити свою ставку на «Оскар-2021». Номінанти стануть відомі 23 січня 2023. Церемонія вручення статуеток відбудеться з неділі на понеділок, 13 березня 2023.</p></div>
+    <div class="a42"><p class="a22" align="justify">Більшість букмекерських контор щорічно приймають ставки на «Оскар» і, як правило, у всіх 24 номінаціях. Наступна, 93-а церемонія не стала винятком і ви вже зараз без особливих зусиль можете ознайомитися з прогнозами букмекерів. Не секрет, що букмекери рідко помиляються, тобто переможець стає відомий заздалегідь, а значить ви вже зараз можете дізнатися можливих переможців «Оскар-2023» в ключових категоріях: «Кращий фільм», «Краща чоловіча роль», «Краща жіноча роль», «Кращий режисер» та інші. Якщо ви встигли переглянути більшість фільмів до початку церемонії і впевнені в конкретному фільмі або персоні, ви можете самостійно зробити ставку за допомогою великої букмекерської контори Parimatch.</p></div>
+        <div class="a43"><p class="a22" align="justify">* Найактуальніші коефіцієнти лише на <a href="https://parimatch1.com/uk/"> <Font  class="kkk">офіційному сайті</Font> </a> букмекерської контори Parimatch</p></div>
+         <img src="фото\8.png" class="a38">
+    <p class="a37">Кращий фільм</p>
+
+<div class="progress"></div>
+<div class="progresss"></div>
+<div class="progressss"></div>
+<div class="progresssss"></div>
+<div class="progressssss"></div>
+<div class="progresssssss"></div>
+<div class="progressssssss"></div>
+<div class="progresssssssss"></div>
+  <img src="фото\8.png" class="a40">
+    <p class="a39">Краща чоловіча роль</p>
+    <div class="progress1"></div>
+    <div class="progress2"></div>
+    <div class="progress3"></div>
+    <div class="progress4"></div>
+    <div class="progress5"></div>
+       <img src="фото\8.png" class="s42">
+    <p class="s41">Краща жіноча роль</p>
+    <div class="progressssss1"></div>
+     <div class="progressssss2"></div>
+      <div class="progressssss3"></div>
+       <div class="progressssss4"></div>
+        <div class="progressssss5"></div>
+         <img src="фото\8.png" class="ss42">
+    <p class="ss41">Краща режисура</p>
+    <div class="progresssssssss1"></div>
+      <div class="progresssssssss2"></div>
+        <div class="progresssssssss3"></div>
+          <div class="progresssssssss4"></div>
+            <div class="progresssssssss5"></div>
+            <a href="https://parimatch1.com/ru/prematch-championship/1%7CET%7C980ef20938ef4b5da63c595000813dc2%7C800b5a3d5bd249d9a39e1ab8fbdebd09,1%7CET%7C980ef20938ef4b5da63c595000813dc2%7C7b94765754574145918856fa82fd6c28" >
+              <button class="scale" class="a77"><p class="a51"><font size="3px" >Зробити ставку на "кращий фільм"</p></font></button></a>
+            <a href="https://parimatch1.com/ru/prematch-championship/1%7CET%7C980ef20938ef4b5da63c595000813dc2%7C800b5a3d5bd249d9a39e1ab8fbdebd09,1%7CET%7C980ef20938ef4b5da63c595000813dc2%7C7b94765754574145918856fa82fd6c28,1%7CET%7C980ef20938ef4b5da63c595000813dc2%7C0147571bad7c4633a25dfd51ab42316d">
+              <button class="scale2"><p class="a51"><font size="3px">Зробити ставку на "Краща чоловіча роль"</p></font></button></a>
+<a href="https://parimatch1.com/ru/prematch-championship/1%7CET%7C980ef20938ef4b5da63c595000813dc2%7C800b5a3d5bd249d9a39e1ab8fbdebd09,1%7CET%7C980ef20938ef4b5da63c595000813dc2%7Ca8cafa21753a4ec092d6b03c6d1f3c77">
+  <button class="scale3"><p class="a51"><font size="3px">Зробити ставку на "Краща жіноча роль"</p></font></button></a>
+<a href="https://parimatch1.com/ru/prematch-championship/1%7CET%7C980ef20938ef4b5da63c595000813dc2%7C800b5a3d5bd249d9a39e1ab8fbdebd09,1%7CET%7C980ef20938ef4b5da63c595000813dc2%7Ca8cafa21753a4ec092d6b03c6d1f3c77">
+  <button class="scale4"><p class="a51"><font size="3px">Зробити ставку на "Краща режисура"</p></font></button></a>
+    <div style="height:-150px"></div>
+
+   <div id="topNubex"><img src="фото\242.jpg" width="45px" height="45px" /></div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+</html>

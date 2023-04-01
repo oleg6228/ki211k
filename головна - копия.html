@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oscars</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+     <link rel="icon"  href="фото\2.png">
+   <style >
+      .scale {
+    transition: 1.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+   }
+   .scale:hover {
+    transform: scale(1.4); /* Увеличиваем масштаб */
+   }
+     .menu {
+    position: fixed; /* Фиксированное положение */
+    right: -3px; /* Расстояние от правого края окна браузера */
+    top: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 60px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+     z-index: 1;
+
+   }
+     .a7{
+      position: fixed;
+    top: 17px;
+    right: 240px;
+    width: 840px; /* Ширина таблицы */
+    background: #483D8B; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    font-family: corbel;
+    font-size: 19px;
+    z-index: 14;
+   }
+   .a8{
+    background:  #483D8B; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+   .a{
+    color: #c79f27;
+   }
+   .a4{
+  margin-top: 180px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a2{
+  position: fixed;
+  top: 9px;
+  left: 45px;
+  z-index: 12;
+}
+.a3{
+  position: absolute;
+  top: 88px;
+  left: 430px;
+}
+.a1{
+  position: absolute;
+  top: 75px;
+  left: 495px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+}
+ .a14{
+      position: absolute;
+    top: 200px;
+    left: 130px;
+    width: 1100px;
+    height: 200px;
+    font-size: 20px;
+      font-family: calibri;
+      line-height: 1.5;
+  }
+   .a35{
+  position: absolute;
+  top: 430px;
+  left: 80px;
+}
+.a36{
+     position: absolute;
+  top: 397px;
+  left: 110px;
+  font-size: 32px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a37{
+     position: absolute;
+   top: 1207px;
+  left: 100px;
+  font-size: 32px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a38{
+  position: absolute;
+ top: 1240px;
+  left: 70px;
+}
+.a39{
+  position: absolute;
+  top: 900px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a40{
+      border: 2px solid #c79f27;
+    }
+    .a41{
+      color: #483D8B;
+  font-family: cambria;
+  font-size: 16px;
+    }
+.a44{
+  position: absolute;
+  top: 1320px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+  .a42{
+  position: absolute;
+  top: 820px;
+  left: 70px;
+}
+   .a43{
+  position: absolute;
+  top: 787px;
+  left: 100px;
+    font-size: 32px;
+  font-family: david;
+  color:  #c79f27;
+}
+ .a45{
+     position: absolute;
+  top: 1635px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a46{
+  position: absolute;
+ top: 1663px;
+  left: 70px;
+}
+.a47{
+  position: absolute;
+  top: 1750px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a48{
+     position: absolute;
+  top: 2065px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a49{
+  position: absolute;
+ top: 2093px;
+  left: 70px;
+}
+.a50{
+  position: absolute;
+  top: 2180px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a51{
+     position: absolute;
+  top: 2485px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a52{
+  position: absolute;
+ top: 2513px;
+  left: 70px;
+}
+.a53{
+  position: absolute;
+  top: 2600px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a54{
+     position: absolute;
+  top: 2885px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a55{
+  position: absolute;
+ top: 2913px;
+  left: 70px;
+}
+.a56{
+  position: absolute;
+  top: 3000px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a57{
+     position: absolute;
+  top: 3315px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a58{
+  position: absolute;
+ top: 3343px;
+  left: 70px;
+}
+.a59{
+  position: absolute;
+  top: 3420px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a60{
+     position: absolute;
+  top: 3735px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .a61{
+  position: absolute;
+ top: 3763px;
+  left: 70px;
+}
+.a62{
+  position: absolute;
+  top: 3840px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a63{
+     position: absolute;
+  top: 4145px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+  .a64{
+  position: absolute;
+ top: 4173px;
+  left: 70px;
+}
+.a65{
+  position: absolute;
+  top: 4240px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a66{
+     position: absolute;
+  top: 4525px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+  .a67{
+  position: absolute;
+ top: 4553px;
+  left: 70px;
+}
+.a68{
+  position: absolute;
+  top: 4620px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+.a69{
+     position: absolute;
+  top: 4905px;
+  left: 100px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+  .a70{
+  position: absolute;
+ top: 4933px;
+  left: 70px;
+}
+.a71{
+  position: absolute;
+  top: 5020px;
+  left: 110px;
+  border:2px;
+  background-color: ;
+  width: 1130px;
+  height: 150px;
+}
+  .a72{
+    position: absolute; /* Фиксированное положение */ /* Расстояние от правого края окна браузера */
+    top: 5500px;
+    right: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 150px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+    .a73{
+      position: absolute;
+    top: 5530px;
+    left: 45px;
+    width: 95%;
+    height: 80px;
+    color: #DCDCDC;
+  }
+  a {
+  text-decoration: none;
+}
+  .a22{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+   div[data-services = "skype"] {
+      position: absolute;
+      top: 342px;
+      left: 1115px;
+    }
+      div[data-services = "viber"]{
+      position: absolute;
+      top: 342px;
+      left: 1145px;
+    }
+      div[data-services = "twitter"]{
+      position: absolute;
+      top: 342px;
+      left: 1175px;
+    }
+      div[data-services = "telegram"]{
+      position: absolute;
+      top: 342px;
+      left: 1205px;
+    }
+     .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+       line-height: 250px;
+    }
+
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media  {
+      .slider__item {
+        flex: 0 0 50%;
+        max-width: 14.1%;
+        margin: 1px;
+      }
+    }
+    .slider{
+      top: 340px;
+      left: 80px;
+    width: 90%;
+    max-height: 400px;
+    background: url(/.s/t/1051/sldr-bg.jpg) no-repeat 50% 0;
+}
+    .slider__control {
+      position: absolute;
+      top: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .slider__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .a74{
+      text-align: right;
+      color: #483D8B;
+  font-family: cambria;
+  font-size: 15px;
+  position: absolute;
+  top: 120px;
+  text-indent: 50px;
+    }
+    .a75{
+      border: 2px solid #c79f27;
+    }
+    .a76 {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a76:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a76:hover {
+    color: #808080; /* Цвет ссылки при наведении */
+   }
+#topNubex {
+  position: fixed;
+  right: 10px;
+  bottom: 45px;
+   }
+	 .auth{
+		 position: fixed;
+		top: 24px;
+		right: 140px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+		text-decoration: underline;
+	 }
+	 .dyb{
+		position: fixed;
+		top: 20px;
+		right: 185px;
+		z-index: 14;
+	 }
+	.reest{
+		position: fixed;
+	 top: 24px;
+	 right: 16px;
+	 background: #483D8B; /* Цвет фона таблицы */
+	 color: black; /* Цвет текста */
+	 border-spacing: 0px; /* Расстояние между ячейками */
+	 font-family: pt sans,Arial,Helvetica,sans-serif;
+	 font-size: 18px;
+	 z-index: 14;
+	 text-decoration: underline;
+	}
+	.slesh{
+		 position: fixed;
+		top: 7px;
+		right: 132px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+ }
+   </style>
+</head>
+<body>
+<div class="menu"></div>
+<body>
+  <table class="a7">
+   <tr><th class="a8"><a href="головна.html"><font color="white" class="a76">ОСКАР</font></th>
+   <th class="a"><a href="головна%20-%20копия.html" ><font color="#c79f27">НОМІНАНТИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия%20-%20копия.html"><font color="white" class="a76"><font color="white" class="a76">НОВИНИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2).html"><font color="white" class="a76"><font color="white" class="a76">ДЕ і КОЛИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия.html"><font color="white" class="a76"><font color="white" class="a76">ДИВИТИСЬ</font></th>
+   <th class="a8"><a href="фільми.html"><font color="white" class="a76"><font color="white" class="a76">ФІЛЬМИ</font></th>
+   <th class="a8"><a href="Прогнози.html"><font color="white" class="a76"><font color="white" class="a76">ПРОГНОЗИ</font></th></tr>
+  </table>
+	<a href="http://localhost:82/php/" class="auth"><font color="#000000">ВХІД</font></a>
+	<img src="фото\dyb.png" width="25px" class="dyb">
+	<a href="http://localhost:82/php2/" class="reest"><font color="#000000">РЕЄСТРАЦІЯ</font></a>
+<p class="slesh">/</p>
+  <p class="a1">НОМІНАНТИ І НОМІНАЦІЇ</p>
+  <img src="фото\1.png" class="a2">
+    <img src="фото\2.png" class="a3">
+ <hr class="a4">
+<div class="a14"><p class="a16" align="justify">Понад 9500 членів Американської премії кінематографічних мистецтв і наук подивилися всі головні фільми 2022 року і представили претендентів. Офіційний список номінантів на «Оскар-2022» в 24-х категоріях був оголошений наживо 13 січня 2022 року. Трансляція церемонії «Оскар» пройшла з неділі на понеділок, 9 лютого 2022 на 03:00 за київським часом.
+<br><br>
+Номінанти на «Оскар-2023» стануть відомі 24 січня наступного року</p></div>
+ <img src="фото\8.png" class="a35">
+  <p class="a36">Кращий фільм</p>
+   <img src="фото\8.png" class="a38">
+    <p class="a37">Краща жіноча роль</p>
+      <table class="a39" >
+   <tr><th ><img src="фото\34.jpg"   align="center" class="scale"><p class="a41" align="center" >Антоніо Бандерас,<br> "Біль і слава"</p></th>
+   <th><img src="фото\35.jpg" align="center" class="scale"><p class="a41" align="center"> Ді Капріо, "Одного разу<br> в Голлівуді"</p></th>
+   <th ><img src="фото\36.jpg" align="center" class="scale"><p class="a41" align="center">Адам Драйвер,<Br> "Шлюбна історія"</p></th>
+   <th ><img src="фото\37.jpg" align="center" class="scale"><p class="a41" align="center" >Джонатан Прайс,<Br> "Два Папи"</p></th>
+   <th ><img src="фото\38.jpg" align="center" class="scale"><p class="a41" align="center">Хоакін Фенікс,<Br> "Джокер"</p></th></tr>
+  </table>
+    <img src="фото\8.png" class="a42">
+    <p class="a43">Краща чоловіча роль</p>
+     <table class="a44" >
+   <tr><th ><img src="фото\39.jpg" class="scale" align="center"><p class="a41" align="center">Сінтія Еріво,<br> "Гарріет"</p></th>
+   <th><img src="фото\40.png" class="scale" align="center"><p class="a41" align="center">Скарлет Йоганссон ,<br> "Шлюбна історія"</p></th>
+   <th ><img src="фото\41.jpg"class="scale" align="center"><p class="a41" align="center">Сірша Ронан,<Br> "Маленькі жінки"</p></th>
+   <th ><img src="фото\42.jpg"class="scale" align="center"><p class="a41" align="center" >Шарліз Терон,<Br> "Сенсація"</p></th>
+   <th ><img src="фото\43.jpg"class="scale" align="center"><p class="a41" align="center">Рене Зеллвегер,<Br> "Джуді"</p></th></tr>
+  </table>
+     <img src="фото\8.png" class="a46">
+    <p class="a45">Краща чоловіча роль другого плану</p>
+    <table class="a47" >
+   <tr><th ><img src="фото\44.jpg" class="scale" align="center"><p class="a41" align="center">Том Хенкс,<br> "Чудовий день "</p></th>
+   <th><img src="фото\45.jpg"class="scale" align="center"><p class="a41" align="center">Ентоні Хопкінс ,<br> "Два Папи"</p></th>
+   <th ><img src="фото\46.jpg"class="scale" align="center"><p class="a41" align="center">Аль Пачіно,<Br> "Ірландець"</p></th>
+   <th ><img src="фото\47.jpg"class="scale" align="center"><p class="a41" align="center" >Джо Пеші,<Br> "Ірландець"</p></th>
+   <th ><img src="фото\48.jpg"class="scale" align="center"><p class="a41" align="center">Бред Пітт,<Br> "Одного разу в Голлівуді"</p></th></tr>
+  </table>
+   <img src="фото\8.png" class="a49">
+    <p class="a48">Краща жіноча роль другого плану</p>
+     <table class="a50" >
+   <tr><th ><img src="фото\49.jpg" class="scale" align="center"><p class="a41" align="center">Кеті Бейтс,<br> "Річард Джуелл "</p></th>
+   <th><img src="фото\50.jpg"class="scale" align="center"><p class="a41" align="center">Скарлетт Йоганссон,<br> "Кролик Джоджо"</p></th>
+   <th ><img src="фото\51.jpg"class="scale" align="center"><p class="a41" align="center">Флоренс П'ю,<Br> "Маленькі жінки"</p></th>
+   <th ><img src="фото\52.jpg"class="scale" align="center"><p class="a41" align="center" >Марго Роббі,<Br> "Сенсація"</p></th>
+   <th ><img src="фото\53.jpg"class="scale" align="center"><p class="a41" align="center">Лора Дерн,<Br> "Шлюбна історія"</p></th></tr>
+  </table>
+  <img src="фото\8.png" class="a52">
+    <p class="a51">Кращий анімаційний фільм</p>
+    <table class="a53">
+   <tr><th ><img src="фото\54.jpg" class="scale" align="center"><p class="a41" align="center">Клаус</p></th>
+   <th><img src="фото\55.jpg"class="scale" align="center"><p class="a41" align="center">Містер лінк</p></th>
+   <th ><img src="фото\56.jpg"class="scale" align="center"><p class="a41" align="center">Як приборкати дракона 3</p></th>
+   <th ><img src="фото\57.jpg"class="scale" align="center"><p class="a41" align="center" >Я втратив своє тіло</p></th>
+   <th ><img src="фото\58.jpg"class="scale" align="center"><p class="a41" align="center">Історія іграшок 4</p></th></tr>
+  </table>
+    <img src="фото\8.png" class="a55">
+    <p class="a54">Кращий режисер</p>
+     <table class="a56" >
+   <tr><th ><img src="фото\59.jpg" class="scale" align="center"><p class="a41" align="center">"Ірландець",<br> Мартін Скорсезе</p></th>
+   <th><img src="фото\60.jpg"class="scale"align="center"><p class="a41" align="center">"Джокер",<br> Тод Філіпс</p></th>
+   <th ><img src="фото\61.jpg"class="scale" align="center"><p class="a41" align="center">"1917",<Br> Сем Мендес</p></th>
+   <th ><img src="фото\62.jpg"class="scale" align="center"><p class="a41" align="center" >"Одного разу в Голівудді",<Br> Квентін Тарантіно</p></th>
+   <th ><img src="фото\63.jpg"class="scale" align="center"><p class="a41" align="center">"Паразити",<Br> Пон Джун Хо</p></th></tr>
+  </table>
+    <img src="фото\8.png" class="a58">
+    <p class="a57">Кращий адаптований сценарій</p>
+      <table class="a59" >
+   <tr><th ><img src="фото\64.jpg" class="scale" align="center"><p class="a41" align="center">Ентоні Маккартен,<br> "Два Папи"</p></th>
+   <th><img src="фото\65.jpg"class="scale" align="center"><p class="a41" align="center">Стівен Заіллян і Чарльз <br>Брандт, "Ірландець"</p></th>
+   <th ><img src="фото\67.jpg"class="scale" align="center"><p class="a41" align="center">Чарльз Брандт і Скотт <br>Сілвер, "Джокер"</p></th>
+   <th ><img src="фото\89.jpg"class="scale" align="center"><p class="a41" align="center" >Грета Гервіг,<Br> "Маленькі жінки"</p></th>
+   <th ><img src="фото\68.jpg"class="scale" align="center"><p class="a41" align="center">Тайка Вайтіті,<Br> "Кролик Джоджо"</p></th></tr>
+  </table>
+      <img src="фото\8.png" class="a61">
+    <p class="a60">Кращий оригінальний сценарій</p>
+    <table class="a62">
+   <tr><th ><img src="фото\69.jpg" class="scale" align="center"><p class="a41" align="center">Раян Джонсон,<br> "Ножі наголо"</p></th>
+   <th><img src="фото\70.jpg"class="scale" align="center"><p class="a41" align="center"> Ноа Баумбах, <br>"Шлюбна історія"</p></th>
+   <th ><img src="фото\71.jpg"class="scale" align="center"><p class="a41" align="center">Сем Мендес  ,<Br> "1917"</p></th>
+   <th ><img src="фото\72.jpg"class="scale" align="center"><p class="a41" align="center" >Квентін Тарантіно,<Br> "Одного разу в Голівудді"</p></th>
+   <th ><img src="фото\73.jpg"class="scale" align="center"><p class="a41" align="center">Пон Джун Хо,<Br> "Паразити"</p></th></tr>
+  </table>
+    <img src="фото\8.png" class="a64">
+    <p class="a63">Кращий фільм на іноземній мові</p>
+      <table class="a65">
+   <tr><th ><img src="фото\74.jpg" class="scale" align="center"><p class="a41" align="center">Біль та слава(Іспанія)</p></th>
+   <th><img src="фото\75.jpg"class="scale" align="center"><p class="a41" align="center">Знедолені(Франція)</p></th>
+   <th ><img src="фото\76.jpg"class="scale" align="center"><p class="a41" align="center">Тіло Христове(Польща)</p></th>
+   <th ><img src="фото\77.jpg"class="scale" align="center"><p class="a41" align="center" >Медова земля(Македонія)</p></th>
+   <th ><img src="фото\78.jpg"class="scale" align="center"><p class="a41" align="center">Паразити(Північна Корея) </p></th></tr>
+  </table>
+     <img src="фото\8.png" class="a67">
+    <p class="a66">Краща операторська робота</p>
+      <table class="a68">
+   <tr><th ><img src="фото\79.jpg" class="scale" align="center"><p class="a41" align="center">Ірландець</p></th>
+   <th><img src="фото\80.jpg"class="scale" align="center"><p class="a41" align="center">Джокер</p></th>
+   <th ><img src="фото\81.jpg"class="scale" align="center"><p class="a41" align="center">Маяк</p></th>
+   <th ><img src="фото\82.jpg"class="scale" align="center"><p class="a41" align="center" >Одного разу в Голівудді</p></th>
+   <th ><img src="фото\83.jpg"class="scale" align="center"><p class="a41" align="center">1917 </p></th></tr>
+  </table>
+     <img src="фото\8.png" class="a70">
+    <p class="a69">Кращі візуальні ефекти</p>
+     <table class="a71">
+   <tr><th ><img src="фото\84.jpg" class="scale" align="center"><p class="a41" align="center">Месники:Фінал</p></th>
+   <th><img src="фото\85.jpg"class="scale" align="center"><p class="a41" align="center">Ірландець</p></th>
+   <th ><img src="фото\86.jpg"class="scale" align="center"><p class="a41" align="center">Король лев</p></th>
+   <th ><img src="фото\87.jpg"class="scale" align="center"><p class="a41" align="center" >Зоряні війни: Скайвокер</p></th>
+   <th ><img src="фото\88.jpg"class="scale" align="center"><p class="a41" align="center">1917 </p></th></tr>
+  </table>
+   <div class="a72"></div>
+   <div class="a73"><p class="a22" align="center"><font size="3px"><a href="головна.html"><font color="white" size="4px">© Oscars</font></a> - сайт Американської премії кінематографічних мистецтв і наук (Academy Awards) в Україні, з 1939 року відомиї як «Оскар». Всі матеріали розміщені на сайті Оscars взяті з відкритих джерел і представлені відвідувачам виключно в ознайомлювальних цілях. <a href="https://www.oscars.org/"><font color="white" size="4">www.oscars.org</font></a> - офіційний сайт Американської кіноакадемії | <a href="https://www.oscars.org/oscars/ceremonies/2022"><font color="white" size="4px">www.oscar.go.com </font></a> - офіційний сайт останньої церемонії «Оскар».</font></p></div>
+    <div class="ya-share2"  data-services="viber"></div>
+      <div class="ya-share2" data-services="twitter"></div>
+      <div class="ya-share2" data-services="telegram"></div>
+      <div class="ya-share2" data-services="skype"></div>
+      <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__item">
+        <div> <a href="фільм9.html"> <img src="фото\12.jpg" class="a75" title="1917"></a><div class="a74" ><font > <a href="фільм9.html" > 1917</a></font></div></div>
+      </div>
+      <div class="slider__item">
+        <div> <a href="фільм2.html"> <img src="фото\10.jpg"class="a75" title="Паразити"></a><div class="a74"> <a href="фільм2.html"> Паразити</a></div></div>
+      </div>
+      <div class="slider__item">
+        <div> <a href="фільм3.html"> <img src="фото\13.jpg"class="a75" title="Маленькі жінки"></a><div class="a74"> <a href="фільм3.html"> Маленькі жінки</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм4.html"> <img src="фото\14.jpg"class="a75" title=" Шлюбна історія"></a><div class="a74"> <a href="фільм4.html"> Шлюбна історія</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм5.html"> <img src="фото\15.jpg"class="a75" title="Кролик Джоджо"></a><div class="a74"> <a href="фільм5.html"> Кролик Джоджо</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм6.html"> <img src="фото\16.jpg"class="a75" title="Джокер"></a><div class="a74"> <a href="фільм6.html"> Джокер</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм7.html"> <img src="фото\17.jpg"class="a75" title="Ірландець"></a><div class="a74"> <a href="фільм7.html"> Ірландець</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм8.html"> <img src="фото\18.jpg"class="a75" title="Аутсайдери"></a><div class="a74"> <a href="фільм8.html"> Аутсайдери</a></div></div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right" href="#" role="button"></a>
+  </div>
+       <div style="height:-150px"></div>
+
+   <div id="topNubex"><img src="фото\242.jpg" width="45px" height="45px" /></div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+  <script>
+    'use strict';
+    var multiItemSlider = (function () {
+
+      function _isElementVisible(element) {
+        var rect = element.getBoundingClientRect(),
+          vWidth = window.innerWidth || doc.documentElement.clientWidth,
+          vHeight = window.innerHeight || doc.documentElement.clientHeight,
+          elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+        if (rect.right < 0 || rect.bottom < 0
+          || rect.left > vWidth || rect.top > vHeight)
+          return false;
+        return (
+          element.contains(elemFromPoint(rect.left, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.bottom))
+          || element.contains(elemFromPoint(rect.left, rect.bottom))
+        );
+      }
+
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = [], // массив элементов
+          _interval = 0,
+          _html = _mainElement.innerHTML,
+          _states = [
+            { active: false, minWidth: 0, count: 1 },
+            { active: false, minWidth: 980, count: 2 }
+          ],
+          _config = {
+            isCycling: false, // автоматическая смена слайдов
+            direction: 'right', // направление смены слайдов
+            interval: 5000, // интервал между автоматической сменой слайдов
+            pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+          };
+
+        for (var key in config) {
+          if (key in _config) {
+            _config[key] = config[key];
+          }
+        }
+
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var _setActive = function () {
+          var _index = 0;
+          var width = parseFloat(document.body.clientWidth);
+          _states.forEach(function (item, index, arr) {
+            _states[index].active = false;
+            if (width >= _states[index].minWidth)
+              _index = index;
+          });
+          _states[_index].active = true;
+        }
+
+        var _getActive = function () {
+          var _index;
+          _states.forEach(function (item, index, arr) {
+            if (_states[index].active) {
+              _index = index;
+            }
+          });
+          return _index;
+        }
+
+        var position = {
+          getItemMin: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position < _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getItemMax: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position > _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getMin: function () {
+            return _items[position.getItemMin()].position;
+          },
+          getMax: function () {
+            return _items[position.getItemMax()].position;
+          }
+        }
+
+        var _transformItem = function (direction) {
+          var nextItem;
+          if (!_isElementVisible(_mainElement)) {
+            return;
+          }
+          if (direction === 'right') {
+            _positionLeftItem++;
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
+              nextItem = position.getItemMin();
+              _items[nextItem].position = position.getMax() + 1;
+              _items[nextItem].transform += _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            _positionLeftItem--;
+            if (_positionLeftItem < position.getMin()) {
+              nextItem = position.getItemMax();
+              _items[nextItem].position = position.getMin() - 1;
+              _items[nextItem].transform -= _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        var _cycle = function (direction) {
+          if (!_config.isCycling) {
+            return;
+          }
+          _interval = setInterval(function () {
+            _transformItem(direction);
+          }, _config.interval);
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        };
+
+        // обработка события изменения видимости страницы
+        var _handleVisibilityChange = function () {
+          if (document.visibilityState === "hidden") {
+            clearInterval(_interval);
+          } else {
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        }
+
+        var _refresh = function () {
+          clearInterval(_interval);
+          _mainElement.innerHTML = _html;
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper');
+          _sliderItems = _mainElement.querySelectorAll('.slider__item');
+          _sliderControls = _mainElement.querySelectorAll('.slider__control');
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left');
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right');
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width);
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width);
+          _positionLeftItem = 0;
+          _transform = 0;
+          _step = _itemWidth / _wrapperWidth * 100;
+          _items = [];
+          _sliderItems.forEach(function (item, index) {
+            _items.push({ item: item, position: index, transform: 0 });
+          });
+        }
+
+        var _setUpListeners = function () {
+          _mainElement.addEventListener('click', _controlClick);
+          if (_config.pause && _config.isCycling) {
+            _mainElement.addEventListener('mouseenter', function () {
+              clearInterval(_interval);
+            });
+            _mainElement.addEventListener('mouseleave', function () {
+              clearInterval(_interval);
+              _cycle(_config.direction);
+            });
+          }
+          document.addEventListener('visibilitychange', _handleVisibilityChange, false);
+          window.addEventListener('resize', function () {
+            var
+              _index = 0,
+              width = parseFloat(document.body.clientWidth);
+            _states.forEach(function (item, index, arr) {
+              if (width >= _states[index].minWidth)
+                _index = index;
+            });
+            if (_index !== _getActive()) {
+              _setActive();
+              _refresh();
+            }
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+        if (document.visibilityState === "visible") {
+          _cycle(_config.direction);
+        }
+        _setActive();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          },
+          stop: function () { // метод stop
+            _config.isCycling = false;
+            clearInterval(_interval);
+          },
+          cycle: function () { // метод cycle
+            _config.isCycling = true;
+            clearInterval(_interval);
+            _cycle();
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider', {
+      isCycling: true
+    })
+
+  </script>
+
+</html>

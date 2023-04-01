@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oscars</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+     <link rel="icon"  href="фото\2.png">
+   <style >
+     .menu {
+    position: fixed; /* Фиксированное положение */
+    right: -3px; /* Расстояние от правого края окна браузера */
+    top: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 60px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+     z-index: 1;
+
+   }
+     .a7{
+      position: fixed;
+    top: 17px;
+    right: 240px;
+    width: 840px; /* Ширина таблицы */
+    background: #483D8B; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    font-family: corbel;
+    font-size: 19px;
+    z-index: 14;
+   }
+   .a8{
+    background:  #483D8B; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+   .a{
+    color: #c79f27;
+   }
+   .a4{
+  margin-top: 180px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a2{
+  position: fixed;
+  top: 9px;
+  left: 45px;
+  z-index: 12;
+}
+.a3{
+  position: absolute;
+  top: 88px;
+  left: 490px;
+}
+.a1{
+  position: absolute;
+  top: 75px;
+  left: 555px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+}
+.a5{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+    width: 540px;
+    height: 360px;
+    object-fit: contain;
+    transition: filter 0.2s linear 0s;
+    max-height: auto;
+    max-height: none;
+    min-width: auto;
+    }
+    .a9{
+      position: absolute;
+      top: 185px;
+      left: 665px;
+     width: 600px;
+     height: 250px;
+    font-family: calibri;
+    font-size: 22px;
+    line-height: 1.5;
+    }
+    .a10{
+      position: absolute;
+      top: 136px;
+      left: 655px;
+      color: #c79f27;
+       font-family: david;
+      font-size: 67px;
+    }
+    .a11{
+      margin-left: 40px;
+      margin-bottom: -23px;
+      font-size: 22px;
+      font-family: calibri;
+      line-height: 1.5;
+    }
+     .a12{
+      margin-left: 40px;
+      font-size: 22px;
+      font-family: calibri;
+    }
+    .a13{
+        position: absolute;
+      top:65px;
+     width: 600px;
+     height: 250px;
+    font-family: calibri;
+    font-size: 22px;
+    line-height: 1.5;
+    }
+       .a14{
+      position: absolute;
+    top: 650px;
+    left: 50px;
+    width: 300px;
+    height: 200px;
+  }
+  .a15{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a16{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+  .a17{
+      position: absolute;
+    top: 650px;
+    left: 370px;
+    width: 300px;
+    height: 200px;
+  }
+  .a18{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a19{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+    .a20{
+      position: absolute;
+    top: 650px;
+    left: 680px;
+    width: 300px;
+    height: 200px;
+  }
+  .a21{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a22{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+    .a23{
+      position: absolute;
+    top: 650px;
+    left: 1000px;
+    width: 300px;
+    height: 200px;
+  }
+  .a24{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a25{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+  .a26{
+  position: absolute;
+  top: 1180px;
+  left: 470px;
+}
+.a27{
+     position: absolute;
+  top: 1165px;
+  left: 550px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+   }
+      .a28{
+  margin-top: 1090px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+  .a29{
+  position: absolute;
+  top: 1700px;
+  left: 300px;
+}
+.a30{
+     position: absolute;
+  top: 1685px;
+  left: 380px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+   }
+      .a31{
+  margin-top: 515px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a32{
+  position: absolute;
+  top: 513px;
+  left: 120px;
+}
+.a33{
+     position: absolute;
+  top: 485px;
+  left: 150px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a34{
+      position: absolute;
+  top: 2360px;
+  left: 100px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a35{
+  position: absolute;
+  top: 2330px;
+  left: 490px;
+}
+.a36{
+     position: absolute;
+  top: 2315px;
+  left: 530px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a37{
+      position: absolute;
+  top: 2360px;
+  left: 510px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .b7{
+  position: absolute;
+  top: 513px;
+  left: 915px;
+}
+.b8{
+     position: absolute;
+  top: 485px;
+  left: 945px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a40{
+      position: absolute;
+  top: 2360px;
+  left: 870px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a41{
+      position: absolute;
+    top: 620px;
+    left: 120px;
+    width: 400px;
+    height: 200px;
+  }
+   .a42{
+      position: absolute;
+    top: 2390px;
+    left: 490px;
+    width: 340px;
+    height: 200px;
+  }
+  .a43{
+      position: absolute;
+    top: 612px;
+    left: 915px;
+    width: 340px;
+    height: 200px;
+  }
+   .a44{
+  position: absolute;
+  top: 2670px;
+  left: 490px;
+}
+.a45{
+     position: absolute;
+  top: 2655px;
+  left: 530px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a46{
+      position: absolute;
+  top: 2700px;
+  left: 510px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a47{
+      position: absolute;
+    top: 760px;
+    left: 550px;
+    width: 340px;
+    height: 200px;
+  }
+     .a48 {
+    position: absolute; /* Фиксированное положение */ /* Расстояние от правого края окна браузера */
+    top: 1300px;
+    right: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 150px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+    .a49{
+      position: absolute;
+    top: 1330px;
+    left: 45px;
+    width: 95%;
+    height: 80px;
+    color: #DCDCDC;
+  }
+  a {
+  text-decoration: none;
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+  position: relative;
+  top: 920px;
+  left: 160px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 4px;
+    color: #000;
+}
+.twitter a:hover {background: #00acee; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.youtube a:hover {background: #c4302b; color: #fff;}
+
+.a50{
+  position: absolute;
+  top: 1125px;
+  left: 50px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+
+}
+.a51{ /* Цвет фона ячеек */
+
+         font-family: cambria;
+}
+.a52{
+  position: absolute;
+  top: 1100px;
+  left: 370px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+}
+.a53{
+  position: absolute;
+  top: 1100px;
+  left: 680px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+}
+.a54{
+  position: absolute;
+  top: 1100px;
+  left: 1000px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+
+}
+.a55 {
+  position: absolute;
+  top: 575px;
+  left: 665px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 30px;
+    border-radius: 7px;
+}
+.a56{
+  position: absolute;
+  top: 1645px;
+  left: 1030px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 7px;
+}
+.a57{
+  position: absolute;
+  top: 2230px;
+  left: 100px;
+  color: #483D8B;
+  font-family: cambria;
+  font-size: 17px;
+}
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+       line-height: 250px;
+    }
+
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media  {
+      .slider__item {
+        flex: 0 0 50%;
+        max-width: 14.1%;
+        margin: 1px;
+      }
+    }
+    .slider{
+      top: -540px;
+      left: 80px;
+    width: 1180px;
+    max-height: 400px;
+    background: url(/.s/t/1051/sldr-bg.jpg) no-repeat 50% 0;
+}
+    .slider__control {
+      position: absolute;
+      top: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .slider__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .a58{
+      text-align: right;
+      color: #483D8B;
+  font-family: cambria;
+  font-size: 15px;
+  position: absolute;
+  top: 120px;
+  text-indent: 50px;
+    }
+    .a59{
+      border: 2px solid #c79f27;
+    }
+     .b {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .b__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+       line-height: 250px;
+    }
+
+    .b__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media  {
+      .b__item {
+        flex: 0 0 50%;
+        max-width: 20%;
+        margin: 1px;
+      }
+    }
+    .b{
+      top: -325px;
+      left: 130px;
+    max-width: 1080px;
+    max-height: 400px;
+    background: url(/.s/t/1051/sldr-bg.jpg) no-repeat 50% 0;
+}
+    .b__control {
+      position: absolute;
+      top: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      color: #B8860B;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: #B8860B;
+    }
+
+    .b__control:hover,
+    .b__control:focus {
+      color:#c79f27;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .b__control_left {
+      left: 0;
+    }
+
+    .b__control_right {
+      right: 0;
+    }
+
+    .b__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .b__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .b__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .sb__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+    .a60{
+      border: 2px solid #c79f27;
+    }
+      .a76 {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a76:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a76:hover {
+    color: #808080; /* Цвет ссылки при наведении */
+   }
+   .b1{
+  position: absolute;
+  top: 230px;
+  left: 120px;
+}
+.b2{
+     position: absolute;
+  top: 202px;
+  left: 150px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+ .b3{
+  position: absolute;
+  top: 230px;
+  left: 720px;
+}
+.b4{
+     position: absolute;
+  top: 202px;
+  left: 750px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+    .b5{
+      position: absolute;
+    top: 300px;
+    left: 730px;
+    width: 560px;
+    height: 300px;
+  }
+     .a77 {
+    color: #4682B4; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a77:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a77:hover {
+    color: #000080; /* Цвет ссылки при наведении */
+   }
+    .b6{
+      position: absolute;
+    top: 300px;
+    left: 130px;
+    width: 560px;
+    height: 300px;
+  }
+  .b9{
+  position: absolute;
+  top: 653px;
+  left: 540px;
+}
+.b10{
+     position: absolute;
+  top: 625px;
+  left: 570px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+    .b11{
+  position: absolute;
+  top: 513px;
+  left: 540px;
+}
+.b12{
+     position: absolute;
+  top: 485px;
+  left: 570px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .b13{
+     position: absolute;
+    top: 620px;
+    left: 550px;
+    width: 340px;
+    height: 200px;
+   }
+   #topNubex {
+  position: fixed;
+  right: 10px;
+  bottom: 45px;
+   }
+	 .auth{
+		 position: fixed;
+		top: 24px;
+		right: 140px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+		text-decoration: underline;
+	 }
+	 .dyb{
+		position: fixed;
+		top: 20px;
+		right: 185px;
+		z-index: 14;
+	 }
+	.reest{
+		position: fixed;
+	 top: 24px;
+	 right: 16px;
+	 background: #483D8B; /* Цвет фона таблицы */
+	 color: black; /* Цвет текста */
+	 border-spacing: 0px; /* Расстояние между ячейками */
+	 font-family: pt sans,Arial,Helvetica,sans-serif;
+	 font-size: 18px;
+	 z-index: 14;
+	 text-decoration: underline;
+	}
+	.slesh{
+		 position: fixed;
+		top: 7px;
+		right: 132px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+ }
+   </style>
+</head>
+<body>
+<div class="menu"></div>
+<body>
+  <table class="a7">
+   <tr><th class="a"><a href="головна.html"><font color="white" >ОСКАР</font></a></th>
+   <th class="a8" ><a href="головна%20-%20копия.html" ><Font color="white" class="a76">НОМІНАНТИ</Font></a></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия%20-%20копия.html"><font color="white" class="a76">НОВИНИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2).html"><font color="#c79f27" >ДЕ і КОЛИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия.html"><font color="white" class="a76">ДИВИТИСЬ</font></th>
+   <th class="a8"><a href="фільми.html"><font color="white" class="a76">ФІЛЬМИ</font></th>
+   <th class="a8"><a href="Прогнози.html"><font color="white" class="a76">ПРОГНОЗИ</font></th></tr>
+  </table>
+	<a href="http://localhost:82/php/" class="auth"><font color="#000000">ВХІД</font></a>
+	<img src="фото\dyb.png" width="25px" class="dyb">
+	<a href="http://localhost:82/php2/" class="reest"><font color="#000000">РЕЄСТРАЦІЯ</font></a>
+<p class="slesh">/</p>
+  <p class="a1">Відповіді на питання</p>
+  <img src="фото\1.png" class="a2">
+    <img src="фото\2.png" class="a3">
+ <hr class="a4">
+
+
+
+  <img src="фото\8.png" class="a32">
+  <p class="a33">Де дивитись церемонію <br>онлайн?</p>
+
+
+  <p class="b8">Які прогнози <Br>букмекерів?</p>
+
+   <div class="a41"><p class="a22" align="left">Стежити за відео трансляцією «Оскара» на оригінальній мові можна за допомогою американського телеканалу ABC Television Network або на <a href="https://abc.com/shows/oscars" ><Font  class="a77">офіційному сайті</Font></a> майбутньої церемонії. У той же час наші кіноблогери будуть переводити церемонію на українську мову. Спостерігати червону килимову доріжку і вручення статуеток в режимі онлайн можна буде на офіційному ютуб каналі <a href="https://www.youtube.com/watch?v=1dHFWeffs_Y" ><Font  class="a77">«Oscars»</Font></a>, яка почнеться з неділі на понеділок, 12 березня 2023 року о 03:00 за київським часом.<Br><Br>Якщо у вас немає можливості стежити за відео трансляцією, ви можете спостерігати за текстовою в наступних соціальних мережах:</p></div>
+
+       <div class="a43"><p class="a22" align="left">Більшість букмекерських контор щорічно приймають ставки на вручення статуеток «Оскара». Майбутня церемонія не стала винятком, і ви вже зараз можете перейти на сайт і подивитися на можливих переможців на думку українських букмекерів. За допомогою сторінки <a href="Прогнози.html" ><Font  class="a77">«Прогнози»</Font></a> можна не тільки ознайомитися з претендентами, а й зробити свою ставку на «Оскар-2023».</p></div>
+
+   <div class="a47"><p class="a22" align="left">Вперше за 30 років церемонія «Оскар-2019» проходила без ведучого. Оголошували лауреатів зі сцени і вручали заповітні статуетки переможцям зірки першої величини. Попередні дві церемонії розважав зіркових гостей комік і ведучий телешоу «Jimmy Kimmel Live» Джиммі Кіммел. «Оскар-2020» також проходив без ведучого.<br><Br> Хто буде ведучим церемонії в 2023 році поки невідомо.</p></div>
+   <div class="a48"></div>
+   <div class="a49"><p class="a22" align="center"><font size="3px"><a href="головна.html"><font color="white" size="4px">© Oscars</font></a> - сайт Американської премії кінематографічних мистецтв і наук (Academy Awards) в Україні, з 1939 року відомиї як «Оскар». Всі матеріали розміщені на сайті Оscars взяті з відкритих джерел і представлені відвідувачам виключно в ознайомлювальних цілях. <a href="https://www.oscars.org/"><font color="white" size="4">www.oscars.org</font></a> - офіційний сайт Американської кіноакадемії | <a href="https://www.oscars.org/oscars/ceremonies/2022"><font color="white" size="4px">www.oscar.go.com </font></a> - офіційний сайт останньої церемонії «Оскар».</font></p></div>
+   <div class="social twitter">
+    <a href="https://twitter.com/theacademy" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+</div>
+<div class="social instagram">
+    <a href="https://www.instagram.com/theacademy/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+</div>
+<div class="social telegram">
+    <a href="https://t.me/oscars_russia" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+</div>
+<div class="social youtube">
+    <a href="https://www.youtube.com/user/Oscars" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+</div>
+  <img src="фото\8.png" class="b1">
+  <p class="b2">Коли відбудеться церемонія вручення?</p>
+   <img src="фото\8.png" class="b3">
+  <p class="b4">Коли стануть відомі номінанти?</p>
+       <div class="b5"><p class="a22" align="left">Понад 9500 членів Американської Премії кінематографічних мистецтв і наук дивитимуться заявлених претендентів в різноманітних категоріях. Офіційний список номінантів в 23-х номінаціях буде оголошено в прямому ефірі 24 січня 2023 року і представлений на сторінці <a href="головна%20-%20копия.html" ><Font  class="a77">НОМІНАНТИ</Font></a>.</p></div>
+<div class="b6"><p class="a22" align="left">93-я церемонія вручення кінопремії «Оскар-2023» відбудеться з неділі на понеділок, 12-13 березня 2021 року в театрі «Долбі» в Голлівуді (Лос-Анджелес, штат Каліфорнія, США). По червоній килимовій доріжці пройдуться багато зірок кіноіндустрії.</p></div>
+   <img src="фото\8.png" class="b9">
+  <p class="b10">Хто буде ведучим <Br>церемонії?</p>
+      <img src="фото\8.png" class="b11">
+  <p class="b12">Які прогнози <Br>букмекерів?</p>
+  <div class="b13"> <p class="a22">Поки невідомо</p></div>
+       <div style="height:-150px"></div>
+
+   <div id="topNubex"><img src="фото\242.jpg" width="45px" height="45px" /></div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+</html>

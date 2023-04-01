@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oscars</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<meta charset="utf-8">
+  <link rel="icon"  href="фото\2.png">
+   <style >
+     .menu {
+    position: fixed; /* Фиксированное положение */
+    right: -3px; /* Расстояние от правого края окна браузера */
+    top: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 60px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+     z-index: 1;
+
+   }
+     .a7{
+      position: fixed;
+    top: 17px;
+    right: 240px;
+    width: 840px; /* Ширина таблицы */
+    background: #483D8B; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    font-family: corbel;
+    font-size: 19px;
+    z-index: 14;
+   }
+   .a8{
+    background:  #483D8B; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+   .a{
+    color: #c79f27;
+   }
+   .a4{
+  margin-top: 180px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a2{
+  position: fixed;
+  top: 9px;
+  left: 45px;
+  z-index: 12;
+}
+.a3{
+  position: absolute;
+  top: 88px;
+  left: 550px;
+}
+.a1{
+  position: absolute;
+  top: 75px;
+  left: 615px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+}
+.a5{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+    width: 540px;
+    height: 360px;
+    object-fit: contain;
+    transition: filter 0.2s linear 0s;
+    max-height: auto;
+    max-height: none;
+    min-width: auto;
+    }
+    .a9{
+      position: absolute;
+      top: 185px;
+      left: 665px;
+     width: 600px;
+     height: 250px;
+    font-family: calibri;
+    font-size: 22px;
+    line-height: 1.5;
+    }
+    .a10{
+      position: absolute;
+      top: 136px;
+      left: 655px;
+      color: #c79f27;
+       font-family: david;
+      font-size: 67px;
+    }
+    .a11{
+      margin-left: 40px;
+      margin-bottom: -23px;
+      font-size: 22px;
+      font-family: calibri;
+      line-height: 1.5;
+    }
+     .a12{
+      margin-left: 40px;
+      font-size: 22px;
+      font-family: calibri;
+    }
+    .a13{
+        position: absolute;
+      top:65px;
+     width: 600px;
+     height: 250px;
+    font-family: calibri;
+    font-size: 22px;
+    line-height: 1.5;
+    }
+       .a14{
+      position: absolute;
+    top: 650px;
+    left: 35px;
+    width: 300px;
+    height: 200px;
+  }
+  .a15{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a16{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+  .a17{
+      position: absolute;
+    top: 650px;
+    left: 355px;
+    width: 300px;
+    height: 200px;
+  }
+  .a18{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a19{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+    .a20{
+      position: absolute;
+    top: 650px;
+    left: 665px;
+    width: 300px;
+    height: 200px;
+  }
+  .a21{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a22{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+    .a23{
+      position: absolute;
+    top: 650px;
+    left: 985px;
+    width: 300px;
+    height: 200px;
+  }
+  .a24{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a25{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+  .a26{
+  position: absolute;
+  top: 1180px;
+  left: 470px;
+}
+.a27{
+     position: absolute;
+  top: 1165px;
+  left: 550px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+   }
+      .a28{
+  margin-top: 1090px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+  .a29{
+  position: absolute;
+  top: 1700px;
+  left: 300px;
+}
+.a30{
+     position: absolute;
+  top: 1685px;
+  left: 380px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+   }
+      .a31{
+  margin-top: 515px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a32{
+  position: absolute;
+  top: 2330px;
+  left: 100px;
+}
+.a33{
+     position: absolute;
+  top: 2315px;
+  left: 130px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a34{
+      position: absolute;
+  top: 2360px;
+  left: 100px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a35{
+  position: absolute;
+  top: 2330px;
+  left: 490px;
+}
+.a36{
+     position: absolute;
+  top: 2315px;
+  left: 530px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a37{
+      position: absolute;
+  top: 2360px;
+  left: 510px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a38{
+  position: absolute;
+  top: 2330px;
+  left: 915px;
+}
+.a39{
+     position: absolute;
+  top: 2315px;
+  left: 945px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a40{
+      position: absolute;
+  top: 2360px;
+  left: 870px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a41{
+      position: absolute;
+    top: 2390px;
+    left: 100px;
+    width: 340px;
+    height: 200px;
+  }
+   .a42{
+      position: absolute;
+    top: 2390px;
+    left: 490px;
+    width: 340px;
+    height: 200px;
+  }
+  .a43{
+      position: absolute;
+    top: 2390px;
+    left: 880px;
+    width: 340px;
+    height: 200px;
+  }
+   .a44{
+  position: absolute;
+  top: 2670px;
+  left: 490px;
+}
+.a45{
+     position: absolute;
+  top: 2655px;
+  left: 530px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a46{
+      position: absolute;
+  top: 2700px;
+  left: 510px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a47{
+      position: absolute;
+    top: 2740px;
+    left: 490px;
+    width: 340px;
+    height: 200px;
+  }
+     .a48 {
+    position: absolute; /* Фиксированное положение */ /* Расстояние от правого края окна браузера */
+    top: 3000px;
+    right: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 150px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+    .a49{
+      position: absolute;
+    top: 3030px;
+    left: 45px;
+    width: 95%;
+    height: 80px;
+    color: #DCDCDC;
+  }
+  a {
+  text-decoration: none;
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+  position: relative;
+  top: 1000px;
+  left: 110px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 4px;
+    color: #000;
+}
+.twitter a:hover {background: #00acee; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.youtube a:hover {background: #c4302b; color: #fff;}
+
+
+.a51{ /* Цвет фона ячеек */
+
+         font-family: cambria;
+}
+
+.a57{
+  position: absolute;
+  top: 2230px;
+  left: 100px;
+  color: #483D8B;
+  font-family: cambria;
+  font-size: 17px;
+}
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+       line-height: 250px;
+    }
+
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media  {
+      .slider__item {
+        flex: 0 0 50%;
+        max-width: 14.1%;
+        margin: 1px;
+      }
+    }
+    .slider{
+      top: -540px;
+      left: 70px;
+    width: 90%;
+    max-height: 400px;
+    background: url(/.s/t/1051/sldr-bg.jpg) no-repeat 50% 0;
+}
+    .slider__control {
+      position: absolute;
+      top: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .slider__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .a58{
+      text-align: right;
+      color: #483D8B;
+  font-family: cambria;
+  font-size: 15px;
+  position: absolute;
+  top: 120px;
+  text-indent: 50px;
+    }
+    .a59{
+      border: 2px solid #c79f27;
+    }
+     .b {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .b__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+       line-height: 250px;
+    }
+
+    .b__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media  {
+      .b__item {
+        flex: 0 0 50%;
+        max-width: 20%;
+        margin: 1px;
+      }
+    }
+    .b{
+      top: -325px;
+      left: 130px;
+    max-width: 1080px;
+    max-height: 400px;
+    background: url(/.s/t/1051/sldr-bg.jpg) no-repeat 50% 0;
+}
+    .b__control {
+      position: absolute;
+      top: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      color: #B8860B;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: #B8860B;
+    }
+
+    .b__control:hover,
+    .b__control:focus {
+      color:#c79f27;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .b__control_left {
+      left: 0;
+    }
+
+    .b__control_right {
+      right: 0;
+    }
+
+    .b__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .b__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .b__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .sb__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+    .a60{
+      border: 2px solid #c79f27;
+    }
+      .a76 {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a76:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a76:hover {
+    color: #808080; /* Цвет ссылки при наведении */
+   }
+    .a77 {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a77:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a77:hover {
+    color: #808080; /* Цвет ссылки при наведении */
+   }
+   .kkk {
+    color: #4682B4; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .kkk:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .kkk:hover {
+    color: #000080; /* Цвет ссылки при наведении */
+   }
+     #topNubex {
+  position: fixed;
+  right: 10px;
+  bottom: 45px;
+   }
+    .scale {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+    position: absolute;
+  top: 1130px;
+  left: 370px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+    .scale2 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+    position: absolute;
+  top: 1100px;
+  left: 680px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale2:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+    .scale3 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+    position: absolute;
+  top: 1100px;
+  left: 1000px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale3:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale4 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+    position: absolute;
+  top: 1125px;
+  left: 50px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale4:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+   .scale5 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+     position: absolute;
+  top: 1645px;
+  left: 1030px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 7px;
+   }
+   .scale5:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+      .scale6 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+       position: absolute;
+  top: 575px;
+  left: 665px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 30px;
+    border-radius: 7px;
+   }
+   .scale6:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+   .auth{
+     position: fixed;
+    top: 24px;
+    right: 140px;
+    background: #483D8B; /* Цвет фона таблицы */
+    color: black; /* Цвет текста */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    font-family: pt sans,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    z-index: 14;
+    text-decoration: underline;
+   }
+   .dyb{
+    position: fixed;
+    top: 20px;
+    right: 185px;
+    z-index: 14;
+   }
+	 .reest{
+		 position: fixed;
+		top: 24px;
+		right: 16px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+		text-decoration: underline;
+	 }
+	 .slesh{
+     position: fixed;
+    top: 7px;
+    right: 132px;
+    background: #483D8B; /* Цвет фона таблицы */
+    color: black; /* Цвет текста */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    font-family: pt sans,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    z-index: 14;
+	}
+   </style>
+</head>
+<body>
+<div class="menu"></div>
+<body>
+  <table class="a7">
+   <tr><th class="a"><a href="головна.html"><font color="#c79f27">ОСКАР</font></a></th>
+   <th class="a8" ><a href="головна%20-%20копия.html" ><Font color="white" class="a76">НОМІНАНТИ</Font></a></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия%20-%20копия.html"><font color="white" class="a76">НОВИНИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2).html"><font color="white" class="a76">ДЕ і КОЛИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия.html"><font color="white" class="a76">ДИВИТИСЬ</font></th>
+   <th class="a8"><a href="фільми.html"><font color="white" class="a76">ФІЛЬМИ</font></th>
+   <th class="a8"><a href="Прогнози.html"><font color="white" class="a76">ПРОГНОЗИ</font></th></tr>
+  </table>
+  <a href="http://localhost:82/php/" class="auth"><font color="#000000">ВХІД</font></a>
+  <img src="фото\dyb.png" width="25px" class="dyb">
+	<a href="http://localhost:82/php2/" class="reest"><font color="#000000">РЕЄСТРАЦІЯ</font></a>
+<p class="slesh">/</p>
+  <p class="a1">ОСКАР 2023</p>
+  <img src="фото\1.png" class="a2">
+    <img src="фото\2.png" class="a3">
+ <hr class="a4">
+
+ <section>
+  <video  controls class="a5" poster="фото\3.jpg">
+    <source src="відео\Победители «Оскара-2020» за полторы минуты.mp4" >
+  </video>
+</section>
+<div class="a9" align="justify"><p class="a11">аступна, 93-я церемонія вручення кінопремії «Оскар-2023»</p><p class="a12"> відбудеться, з неділі на понеділок,  12 березня 2023 року в </p><p class="a13">театрі «Долбі» в Голлівуді (Лос-Анджелес, штат Каліфорнія, США). Червону коврову доріжку та всю церемонію вручення премій «Оскар» на українській мові можна переглянути на нашому сайті в режимі онлайн.<br><br>Дивитися пряму трансляцію церемонії вручення «Оскар-2023» на оригінальній мові можна за допомогою американського телеканалу ABC Television Network. Номінанти стануть відомі 24 січня 2023 року.</p></div>
+<P class="a10" >Н</P>
+<div class="a14"> <a href="новина1.html"> <img src="фото\4.jpg"></a><p class="a15" align="justify"> <a href="новина1.html"><Font  class="kkk"> Нові правила в номінації «Кращий фільм». Зміни вступлять в силу в 2024 році</Font></a></p><p class="a16" align="left">Американська кіноакадемія кінематографічних мистецтв і наук вводить нові правила для проєктів, що претендують на премію «Оскар» в категорії «Кращий фільм». Зміни ...</p></div>
+<div class="a17"> <a href="новина2.html"> <img src="фото\5.jpg"></a><p class="a18" align="justify"> <a href="новина2.html"><Font  class="kkk">  BAFTA TV Awards 2022 – Переможці</Font></a></p><p class="a19" align="left">Британська академія кіно і телевізійних мистецтв 31 липня 2022 оголосила лауреатів премії BAFTA TV Awards 2022. Комік Річард Айоаде вів церемонію в студії, а переможці премії підключалися до трансляції...</p></div>
+<div class="a20"> <a href="новина3.html"> <img src="фото\first.jpg"></a><p class="a21" align="justify"> <a href="новина3.html"> <Font  class="kkk"> Номінанти кінопремії «Оскар» у 2023 році</Font></a></p><p class="a22" align="left">Американська академія кінематографічних мистецтв і наук анонсувала номінантів наступної церемонії. Про це було повідомлено в офіційній соц-мережі ....</p></div>
+<div class="a23"> <a href="новина4.html"> <img src="фото\small.jpg"></a><p class="a24" align="justify"> <a href="новина4.html"> <Font  class="kkk"> «Оскар-2022» - Список переможців. Результати</Font></a></p><p class="a25" align="left">Американська кіноакадемія кінематографічних мистецтв і наук провела 92-ту церемонію вручення премії «Оскар-2022». Головна подія року в світі кіно проходило в ...</p></div>
+ <img src="фото\2.png" class="a26">
+ <p class="a27">Кращі фільми 2022</p>
+  <hr class="a28">
+   <img src="фото\2.png" class="a29">
+ <p class="a30">Червона коврова доріжка #RedCarpet2022</p>
+  <hr class="a31">
+  <img src="фото\8.png" class="a32">
+  <p class="a33">Де дивитись церемонію онлайн?</p>
+   <hr class="a34">
+    <img src="фото\8.png" class="a35">
+  <p class="a36">Коли стануть відомі номінанти?</p>
+   <hr class="a37">
+       <img src="фото\8.png" class="a38">
+  <p class="a39">Які прогнози букмекерів?</p>
+   <hr class="a40">
+   <div class="a41"><p class="a22" align="justify">Стежити за відео трансляцією «Оскара» на оригінальній мові можна за допомогою американського телеканалу ABC Television Network. У той же час наші кіноблогери будуть переводити церемонію на українську мову. Спостерігати червону килимову доріжку і вручення статуеток в режимі онлайн можна буде на нашому сайті, в розділі<a href="головна%20-%20копия%20(2)%20-%20копия.html"> <Font  class="kkk">«ТРАНСЛЯЦІЯ»</Font></a>, яка почнеться з неділі на понеділок, 12 березня 2023 року о 03:00 за київським часом.</p></div>
+      <div class="a42"><p class="a22" align="justify">Понад 9500 членів Американської Премії кінематографічних мистецтв і наук дивитимуться заявлених претендентів в різноманітних категоріях. Офіційний список номінантів в 23-х номінаціях буде оголошено в прямому ефірі 24 січня 2023 року і представлений на сторінці <a href="головна%20-%20копия.html"> <Font  class="kkk">«НОМІНАНТИ».</Font></a></p></div>
+       <div class="a43"><p class="a22" align="justify">Більшість букмекерських контор щорічно приймають ставки на вручення статуеток «Оскара». Майбутня церемонія не стала винятком, і ви вже зараз можете перейти на сайт і подивитися на можливих переможців на думку українських букмекерів. За допомогою сторінки<a href="Прогнози.html"> <Font  class="kkk">«СТАВКИ»</Font> </a>можна не тільки ознайомитися з претендентами, а й зробити свою ставку на «Оскар-2023».</p></div>
+       <img src="фото\8.png" class="a44">
+  <p class="a45">Хто буде ведучим церемонії?</p>
+   <hr class="a46">
+   <div class="a47"><p class="a22" align="justify">Вперше за 30 років церемонія «Оскар-2019» проходила без ведучого. «Оскар-2020» також проходив без ведучого. Хто буде ведучим церемонії в 2023 році поки невідомо.</p></div>
+   <div class="a48"></div>
+   <div class="a49"><p class="a22" align="center"><font size="3px"><a href="головна.html"><font color="white" size="4px">© Oscars</font></a> - сайт Американської премії кінематографічних мистецтв і наук (Academy Awards) в Україні, з 1939 року відомиї як «Оскар». Всі матеріали розміщені на сайті Оscars взяті з відкритих джерел і представлені відвідувачам виключно в ознайомлювальних цілях. <a href="https://www.oscars.org/"><font color="white" size="4">www.oscars.org</font></a> - офіційний сайт Американської кіноакадемії | <a href="https://www.oscars.org/oscars/ceremonies/2022"><font color="white" size="4px">www.oscar.go.com </font></a> - офіційний сайт останньої церемонії «Оскар».</font></p></div>
+   <div class="social twitter">
+    <a href="https://twitter.com/theacademy" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+</div>
+<div class="social instagram">
+    <a href="https://www.instagram.com/theacademy/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+</div>
+<div class="social telegram">
+    <a href="https://t.me/oscars_russia" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+</div>
+<div class="social youtube">
+    <a href="https://www.youtube.com/user/Oscars" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+</div>
+<a href="новина1.html" ><button class="scale4" class="a77" ><p class="a51"><font size="3px" >ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина2.html"><button  class="scale"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина3.html"><button class="scale2"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина4.html"><button class="scale3"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="головна%20-%20копия%20(2)%20-%20копия.html"><button class="scale6"><p class="a51"><font size="4px">ДИВИТИСЬ ЦЕРЕМОНІЮ</p></font></button></a>
+<a href="головна%20-%20копия.html"><button class="scale5"><p class="a51"><font size="3px">НОМІНАНТИ І НОМІНАЦІЇ</p></font></button></a>
+<P class="a57"><i>PHOTO BY: Legion-Media, WireImage, FilmMagic, Getty Images</i></P>
+<div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__item">
+        <div> <a href="фільм9.html"> <img src="фото\12.jpg" class="a59" title="1917"></a><div class="a58" ><font > <a href="фільм9.html"> 1917</a></font></div></div>
+      </div>
+      <div class="slider__item">
+        <div> <a href="фільм2.html"> <img src="фото\10.jpg"class="a59" title="Паразити"></a><div class="a58"> <a href="фільм2.html"> Паразити</a></div></div>
+      </div>
+      <div class="slider__item">
+        <div> <a href="фільм3.html"> <img src="фото\13.jpg"class="a59" title="Маленькі жінки"></a><div class="a58"> <a href="фільм3.html"> Маленькі жінки</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм4.html"> <img src="фото\14.jpg"class="a59" title="Шлюбна історія"></a><div class="a58"> <a href="фільм4.html"> Шлюбна історія</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм5.html"> <img src="фото\15.jpg"class="a59" title="Кролик Джоджо"></a><div class="a58"> <a href="фільм5.html"> Кролик Джоджо</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм6.html"> <img src="фото\16.jpg"class="a59" title="Джокер"></a><div class="a58"> <a href="фільм6.html"> Джокер</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм7.html"> <img src="фото\17.jpg"class="a59" title="Ірландець"></a><div class="a58"> <a href="фільм7.html"> Ірландець</a></div></div>
+      </div>
+       <div class="slider__item">
+        <div> <a href="фільм8.html"> <img src="фото\18.jpg"class="a59" title="Аутсайдери"></a><div class="a58"> <a href="фільм8.html"> Аутсайдери</a></div></div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right" href="#" role="button"></a>
+  </div>
+<div class="b">
+    <div class="b__wrapper">
+      <div class="b__item">
+        <div><img src="фото\19.jpg" class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\20.jpg" class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\22.jpg"class="a60"></div>
+      </div>
+       <div class="b__item">
+        <div><img src="фото\23.jpg"class="a60"></div>
+      </div>
+       <div class="b__item">
+        <div><img src="фото\24.jpg"class="a60"></div>
+      </div>
+       <div class="b__item">
+        <div><img src="фото\25.jpg"class="a60"></div>
+      </div>
+       <div class="b__item">
+        <div><img src="фото\26.jpg"class="a60"></div>
+      </div>
+       <div class="b__item">
+        <div><img src="фото\27.jpg"class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\28.jpg"class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\29.jpg"class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\30.jpg"class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\31.jpg"class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\32.jpg"class="a60"></div>
+      </div>
+      <div class="b__item">
+        <div><img src="фото\33.jpg"class="a60"></div>
+      </div>
+    </div>
+    <a class="b__control b__control_left" href="#" role="button"></a>
+    <a class="b__control b__control_right" href="#" role="button"></a>
+  </div>
+     <div style="height:-150px"></div>
+
+   <div id="topNubex"><img src="фото\242.jpg" width="45px" height="45px" /></div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+  <script>
+    'use strict';
+    var multiItemSlider = (function () {
+
+      function _isElementVisible(element) {
+        var rect = element.getBoundingClientRect(),
+          vWidth = window.innerWidth || doc.documentElement.clientWidth,
+          vHeight = window.innerHeight || doc.documentElement.clientHeight,
+          elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+        if (rect.right < 0 || rect.bottom < 0
+          || rect.left > vWidth || rect.top > vHeight)
+          return false;
+        return (
+          element.contains(elemFromPoint(rect.left, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.bottom))
+          || element.contains(elemFromPoint(rect.left, rect.bottom))
+        );
+      }
+
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = [], // массив элементов
+          _interval = 0,
+          _html = _mainElement.innerHTML,
+          _states = [
+            { active: false, minWidth: 0, count: 1 },
+            { active: false, minWidth: 980, count: 2 }
+          ],
+          _config = {
+            isCycling: false, // автоматическая смена слайдов
+            direction: 'right', // направление смены слайдов
+            interval: 5000, // интервал между автоматической сменой слайдов
+            pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+          };
+
+        for (var key in config) {
+          if (key in _config) {
+            _config[key] = config[key];
+          }
+        }
+
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var _setActive = function () {
+          var _index = 0;
+          var width = parseFloat(document.body.clientWidth);
+          _states.forEach(function (item, index, arr) {
+            _states[index].active = false;
+            if (width >= _states[index].minWidth)
+              _index = index;
+          });
+          _states[_index].active = true;
+        }
+
+        var _getActive = function () {
+          var _index;
+          _states.forEach(function (item, index, arr) {
+            if (_states[index].active) {
+              _index = index;
+            }
+          });
+          return _index;
+        }
+
+        var position = {
+          getItemMin: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position < _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getItemMax: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position > _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getMin: function () {
+            return _items[position.getItemMin()].position;
+          },
+          getMax: function () {
+            return _items[position.getItemMax()].position;
+          }
+        }
+
+        var _transformItem = function (direction) {
+          var nextItem;
+          if (!_isElementVisible(_mainElement)) {
+            return;
+          }
+          if (direction === 'right') {
+            _positionLeftItem++;
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
+              nextItem = position.getItemMin();
+              _items[nextItem].position = position.getMax() + 1;
+              _items[nextItem].transform += _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            _positionLeftItem--;
+            if (_positionLeftItem < position.getMin()) {
+              nextItem = position.getItemMax();
+              _items[nextItem].position = position.getMin() - 1;
+              _items[nextItem].transform -= _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        var _cycle = function (direction) {
+          if (!_config.isCycling) {
+            return;
+          }
+          _interval = setInterval(function () {
+            _transformItem(direction);
+          }, _config.interval);
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        };
+
+        // обработка события изменения видимости страницы
+        var _handleVisibilityChange = function () {
+          if (document.visibilityState === "hidden") {
+            clearInterval(_interval);
+          } else {
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        }
+
+        var _refresh = function () {
+          clearInterval(_interval);
+          _mainElement.innerHTML = _html;
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper');
+          _sliderItems = _mainElement.querySelectorAll('.slider__item');
+          _sliderControls = _mainElement.querySelectorAll('.slider__control');
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left');
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right');
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width);
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width);
+          _positionLeftItem = 0;
+          _transform = 0;
+          _step = _itemWidth / _wrapperWidth * 100;
+          _items = [];
+          _sliderItems.forEach(function (item, index) {
+            _items.push({ item: item, position: index, transform: 0 });
+          });
+        }
+
+        var _setUpListeners = function () {
+          _mainElement.addEventListener('click', _controlClick);
+          if (_config.pause && _config.isCycling) {
+            _mainElement.addEventListener('mouseenter', function () {
+              clearInterval(_interval);
+            });
+            _mainElement.addEventListener('mouseleave', function () {
+              clearInterval(_interval);
+              _cycle(_config.direction);
+            });
+          }
+          document.addEventListener('visibilitychange', _handleVisibilityChange, false);
+          window.addEventListener('resize', function () {
+            var
+              _index = 0,
+              width = parseFloat(document.body.clientWidth);
+            _states.forEach(function (item, index, arr) {
+              if (width >= _states[index].minWidth)
+                _index = index;
+            });
+            if (_index !== _getActive()) {
+              _setActive();
+              _refresh();
+            }
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+        if (document.visibilityState === "visible") {
+          _cycle(_config.direction);
+        }
+        _setActive();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          },
+          stop: function () { // метод stop
+            _config.isCycling = false;
+            clearInterval(_interval);
+          },
+          cycle: function () { // метод cycle
+            _config.isCycling = true;
+            clearInterval(_interval);
+            _cycle();
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider', {
+      isCycling: true
+    })
+
+  </script>
+    <script>
+    'use strict';
+    var multiItemSlider = (function () {
+
+      function _isElementVisible(element) {
+        var rect = element.getBoundingClientRect(),
+          vWidth = window.innerWidth || doc.documentElement.clientWidth,
+          vHeight = window.innerHeight || doc.documentElement.clientHeight,
+          elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+        if (rect.right < 0 || rect.bottom < 0
+          || rect.left > vWidth || rect.top > vHeight)
+          return false;
+        return (
+          element.contains(elemFromPoint(rect.left, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.top))
+          || element.contains(elemFromPoint(rect.right, rect.bottom))
+          || element.contains(elemFromPoint(rect.left, rect.bottom))
+        );
+      }
+
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.b__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.b__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.b__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.b__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.b__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = [], // массив элементов
+          _interval = 0,
+          _html = _mainElement.innerHTML,
+          _states = [
+            { active: false, minWidth: 0, count: 1 },
+            { active: false, minWidth: 980, count: 2 }
+          ],
+          _config = {
+            isCycling: false, // автоматическая смена слайдов
+            direction: 'right', // направление смены слайдов
+            interval: 5000, // интервал между автоматической сменой слайдов
+            pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+          };
+
+        for (var key in config) {
+          if (key in _config) {
+            _config[key] = config[key];
+          }
+        }
+
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var _setActive = function () {
+          var _index = 0;
+          var width = parseFloat(document.body.clientWidth);
+          _states.forEach(function (item, index, arr) {
+            _states[index].active = false;
+            if (width >= _states[index].minWidth)
+              _index = index;
+          });
+          _states[_index].active = true;
+        }
+
+        var _getActive = function () {
+          var _index;
+          _states.forEach(function (item, index, arr) {
+            if (_states[index].active) {
+              _index = index;
+            }
+          });
+          return _index;
+        }
+
+        var position = {
+          getItemMin: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position < _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getItemMax: function () {
+            var indexItem = 0;
+            _items.forEach(function (item, index) {
+              if (item.position > _items[indexItem].position) {
+                indexItem = index;
+              }
+            });
+            return indexItem;
+          },
+          getMin: function () {
+            return _items[position.getItemMin()].position;
+          },
+          getMax: function () {
+            return _items[position.getItemMax()].position;
+          }
+        }
+
+        var _transformItem = function (direction) {
+          var nextItem;
+          if (!_isElementVisible(_mainElement)) {
+            return;
+          }
+          if (direction === 'right') {
+            _positionLeftItem++;
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
+              nextItem = position.getItemMin();
+              _items[nextItem].position = position.getMax() + 1;
+              _items[nextItem].transform += _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            _positionLeftItem--;
+            if (_positionLeftItem < position.getMin()) {
+              nextItem = position.getItemMax();
+              _items[nextItem].position = position.getMin() - 1;
+              _items[nextItem].transform -= _items.length * 100;
+              _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
+            }
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        var _cycle = function (direction) {
+          if (!_config.isCycling) {
+            return;
+          }
+          _interval = setInterval(function () {
+            _transformItem(direction);
+          }, _config.interval);
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('b__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('b__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        };
+
+        // обработка события изменения видимости страницы
+        var _handleVisibilityChange = function () {
+          if (document.visibilityState === "hidden") {
+            clearInterval(_interval);
+          } else {
+            clearInterval(_interval);
+            _cycle(_config.direction);
+          }
+        }
+
+        var _refresh = function () {
+          clearInterval(_interval);
+          _mainElement.innerHTML = _html;
+          _sliderWrapper = _mainElement.querySelector('.b__wrapper');
+          _sliderItems = _mainElement.querySelectorAll('.b__item');
+          _sliderControls = _mainElement.querySelectorAll('.b__control');
+          _sliderControlLeft = _mainElement.querySelector('.b__control_left');
+          _sliderControlRight = _mainElement.querySelector('.b__control_right');
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width);
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width);
+          _positionLeftItem = 0;
+          _transform = 0;
+          _step = _itemWidth / _wrapperWidth * 100;
+          _items = [];
+          _sliderItems.forEach(function (item, index) {
+            _items.push({ item: item, position: index, transform: 0 });
+          });
+        }
+
+        var _setUpListeners = function () {
+          _mainElement.addEventListener('click', _controlClick);
+          if (_config.pause && _config.isCycling) {
+            _mainElement.addEventListener('mouseenter', function () {
+              clearInterval(_interval);
+            });
+            _mainElement.addEventListener('mouseleave', function () {
+              clearInterval(_interval);
+              _cycle(_config.direction);
+            });
+          }
+          document.addEventListener('visibilitychange', _handleVisibilityChange, false);
+          window.addEventListener('resize', function () {
+            var
+              _index = 0,
+              width = parseFloat(document.body.clientWidth);
+            _states.forEach(function (item, index, arr) {
+              if (width >= _states[index].minWidth)
+                _index = index;
+            });
+            if (_index !== _getActive()) {
+              _setActive();
+              _refresh();
+            }
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+        if (document.visibilityState === "visible") {
+          _cycle(_config.direction);
+        }
+        _setActive();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          },
+          stop: function () { // метод stop
+            _config.isCycling = false;
+            clearInterval(_interval);
+          },
+          cycle: function () { // метод cycle
+            _config.isCycling = true;
+            clearInterval(_interval);
+            _cycle();
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.b', {
+      isCycling: true
+    })
+
+  </script>
+
+</html>

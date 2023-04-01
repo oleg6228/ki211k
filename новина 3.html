@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oscars</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link rel="icon"  href="фото\2.png">
+   <style >
+     .menu {
+    position: fixed; /* Фиксированное положение */
+    right: -3px; /* Расстояние от правого края окна браузера */
+    top: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 60px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+     z-index: 1;
+
+   }
+     .a7{
+      position: fixed;
+    top: 17px;
+    right: 240px;
+    width: 840px; /* Ширина таблицы */
+    background: #483D8B; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 0px; /* Расстояние между ячейками */
+    font-family: corbel;
+    font-size: 19px;
+    z-index: 14;
+   }
+   .a8{
+    background:  #483D8B; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+   .a4{
+  margin-top: 180px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a2{
+  position: fixed;
+  top: 9px;
+  left: 75px;
+  z-index: 12;
+}
+.a3{
+  position: absolute;
+  top: 88px;
+  left: 545px;
+}
+.a1{
+  position: absolute;
+  top: 75px;
+  left: 610px;
+  font-size: 38px;
+  font-family: david;
+  color:  #c79f27;
+}
+.a5{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+    width: 540px;
+    height: 360px;
+    object-fit: contain;
+    transition: filter 0.2s linear 0s;
+    max-height: auto;
+    max-height: none;
+    min-width: auto;
+    }
+    .a9{
+      position: absolute;
+      top: 185px;
+      left: 665px;
+     width: 600px;
+     height: 250px;
+    font-family: calibri;
+    font-size: 22px;
+    line-height: 1.5;
+    }
+    .a10{
+      position: absolute;
+      top: 136px;
+      left: 655px;
+      color: #c79f27;
+       font-family: david;
+      font-size: 67px;
+    }
+    .a11{
+      margin-left: 40px;
+      margin-bottom: -23px;
+      font-size: 22px;
+      font-family: calibri;
+      line-height: 1.5;
+    }
+     .a12{
+      margin-left: 40px;
+      font-size: 22px;
+      font-family: calibri;
+    }
+    .a13{
+        position: absolute;
+      top:65px;
+     width: 600px;
+     height: 250px;
+    font-family: calibri;
+    font-size: 22px;
+    line-height: 1.5;
+    }
+       .a14{
+      position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 300px;
+    height: 200px;
+  }
+   .b14{
+      position: absolute;
+    top: 820px;
+    left: 50px;
+    width: 300px;
+    height: 200px;
+  }
+  .a15{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a16{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+  .a17{
+      position: absolute;
+    top: 250px;
+    left: 370px;
+    width: 300px;
+    height: 200px;
+  }
+    .b17{
+      position: absolute;
+    top: 820px;
+    left: 370px;
+    width: 300px;
+    height: 200px;
+  }
+  .a18{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a19{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+    .a20{
+      position: absolute;
+    top: 250px;
+    left: 680px;
+    width: 300px;
+    height: 200px;
+  }
+   .b20{
+      position: absolute;
+    top: 820px;
+    left: 680px;
+    width: 300px;
+    height: 200px;
+  }
+  .a21{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a22{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+    .a23{
+      position: absolute;
+    top: 250px;
+    left: 1000px;
+    width: 300px;
+    height: 200px;
+  }
+  .b23{
+      position: absolute;
+    top: 820px;
+    left: 1000px;
+    width: 300px;
+    height: 200px;
+  }
+  .a24{
+      color: #47a;
+          font-size: 1.0625rem;
+          line-height: 1.6;
+          font-style: normal;
+          font-family: verdana;
+          font-size: 18px;
+          margin-top: 4px;
+  }
+  .a25{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+  .a26{
+  position: absolute;
+  top: 1180px;
+  left: 470px;
+}
+.a27{
+     position: absolute;
+  top: 1165px;
+  left: 550px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+   }
+      .a28{
+  margin-top: 1090px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+  .a29{
+  position: absolute;
+  top: 1700px;
+  left: 300px;
+}
+.a30{
+     position: absolute;
+  top: 1685px;
+  left: 380px;
+  font-size: 35px;
+  font-family: david;
+  color:  #c79f27;
+   }
+      .a31{
+  margin-top: 515px;
+border: 0;
+height: 3px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a32{
+  position: absolute;
+  top: 513px;
+  left: 120px;
+}
+.a33{
+     position: absolute;
+  top: 485px;
+  left: 150px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a34{
+      position: absolute;
+  top: 2360px;
+  left: 100px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a35{
+  position: absolute;
+  top: 2330px;
+  left: 490px;
+}
+.a36{
+     position: absolute;
+  top: 2315px;
+  left: 530px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a37{
+      position: absolute;
+  top: 2360px;
+  left: 510px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .b7{
+  position: absolute;
+  top: 513px;
+  left: 915px;
+}
+.b8{
+     position: absolute;
+  top: 485px;
+  left: 945px;
+  font-size: 30px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a40{
+      position: absolute;
+  top: 2360px;
+  left: 870px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+ .a41{
+      position: absolute;
+    top: 620px;
+    left: 120px;
+    width: 400px;
+    height: 200px;
+  }
+   .a42{
+      position: absolute;
+    top: 2390px;
+    left: 490px;
+    width: 340px;
+    height: 200px;
+  }
+  .a43{
+      position: absolute;
+    top: 612px;
+    left: 915px;
+    width: 340px;
+    height: 200px;
+  }
+   .a44{
+  position: absolute;
+  top: 2670px;
+  left: 490px;
+}
+.a45{
+     position: absolute;
+  top: 2655px;
+  left: 530px;
+  font-size: 21px;
+  font-family: david;
+  color:  #c79f27;
+   }
+     .a46{
+      position: absolute;
+  top: 2700px;
+  left: 510px;
+border: 0;
+height: 1px;
+width: 350px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff,  #BDB76B, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+.a47{
+      position: absolute;
+    top: 760px;
+    left: 550px;
+    width: 340px;
+    height: 200px;
+  }
+
+  a {
+  text-decoration: none;
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+  position: relative;
+  top: 920px;
+  left: 160px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 4px;
+    color: #000;
+}
+.twitter a:hover {background: #00acee; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.youtube a:hover {background: #c4302b; color: #fff;}
+
+
+.a51{ /* Цвет фона ячеек */
+
+         font-family: cambria;
+       }
+
+  .c51{ /* Цвет фона ячеек */
+
+         font-family: cambria;
+           transform: translate(-0%, -35%)
+
+}
+
+.c52{
+  position: absolute;
+  top: 1400px;
+  left: 550px;
+  background-color:#113 ;
+    border: none;
+    color: white;
+    width:38px;
+    height:38px;
+}
+.c53{
+  position: absolute;
+  top: 1400px;
+  left: 600px;
+  background-color:#113;
+    border: none;
+    color: white;
+    width:38px;
+    height:38px;
+}
+.c54{
+  position: absolute;
+  top: 1400px;
+  left: 650px;
+  background-color: #47a;
+    border: none;
+    color: white;
+    width:38px;
+    height:38px;
+}
+.c55{
+  position: absolute;
+  top: 1400px;
+  left: 700px;
+  background-color: #113;
+    border: none;
+    color: white;
+    width:38px;
+    height:38px;
+}
+
+
+
+.a55 {
+  position: absolute;
+  top: 575px;
+  left: 665px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 30px;
+    border-radius: 7px;
+}
+.a56{
+  position: absolute;
+  top: 1645px;
+  left: 1030px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 7px;
+}
+.a57{
+  position: absolute;
+  top: 2230px;
+  left: 100px;
+  color: #483D8B;
+  font-family: cambria;
+  font-size: 17px;
+}
+
+   .a41{
+      position: absolute;
+    top: 220px;
+    left: 120px;
+    width: 1160px;
+    height: 200px;
+  }
+
+   .a22{
+
+          line-height: 1.6;
+          font-style: normal;
+          font-family: cambria;
+          font-size: 19px;
+          margin-top: -12px;
+  }
+  .b1{
+     position: absolute;
+  top: 360px;
+  left: 460px;
+  font-size: 24px;
+  font-family: david;
+  color:  #c79f27;
+   }
+    .b2{
+     position: absolute;
+  top: 950px;
+  left: 460px;
+  font-size: 24px;
+  font-family: david;
+  color:  #c79f27;
+   }
+    .b3{
+     position: absolute;
+  top: 1560px;
+  left: 460px;
+  font-size: 24px;
+  font-family: david;
+  color:  #c79f27;
+   }
+    .b4{
+     position: absolute;
+  top: 2160px;
+  left: 280px;
+  font-size: 20px;
+  font-family: david;
+  color:  #c79f27;
+   }
+   .b5{
+    position: absolute;
+    top: 440px;
+    left: 280px;
+   }
+   .b6{
+    position: absolute;
+    top: 1030px;
+    left: 280px;
+   }
+   .b7{
+    position: absolute;
+    top: 1640px;
+    left: 280px;
+   }
+   .b11{
+    position: absolute;
+    top: 2200px;
+    left: 260px;
+    font-size: 20px;
+    line-height: 1.5;
+   }
+    .a76 {
+    color: white; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a76:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a76:hover {
+    color: #808080; /* Цвет ссылки при наведении */
+   }
+    .a77 {
+    color: #4682B4; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   .a77:visited {
+    color: #c79f27;
+    text-decoration: none; /* Цвет посещённой ссылки */
+   }
+   .a77:hover {
+    color: #000080; /* Цвет ссылки при наведении */
+   }
+     .a48 {
+    position: absolute; /* Фиксированное положение */ /* Расстояние от правого края окна браузера */
+    top: 1600px;
+    right: 0px; /* Расстояние сверху */
+    width: 100%;
+    height: 150px;
+    background: #483D8B; /* Цвет фона */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+    .a49{
+      position: absolute;
+    top: 1630px;
+    left:45px;
+    width: 95%;
+    height: 80px;
+    color: #DCDCDC;
+  }
+  .z{
+      position: absolute;
+    top: 1480px;
+    left: 50px;
+    width: 1200px;
+    height: 200px;
+  }
+  .a59{
+      border: 2px solid #c79f27;
+    }
+      #topNubex {
+  position: fixed;
+  right: 10px;
+  bottom: 45px;
+   }
+       .scale {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+     position: absolute;
+  top: 650px;
+  left: 50px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+       .scale2 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+ position: absolute;
+  top: 700px;
+  left: 370px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+
+   }
+   .scale2:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale3 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+  position: absolute;
+  top: 730px;
+  left: 680px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale3:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale4 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+     position: absolute;
+  top: 730px;
+  left: 1000px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+
+   }
+   .scale4:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale5 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+     position: absolute;
+  top: 1300px;
+  left: 50px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+
+   }
+   .scale5:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale6 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+ position: absolute;
+  top: 1270px;
+  left: 370px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale6:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale7 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+   position: absolute;
+  top: 1300px;
+  left: 680px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+
+   }
+   .scale7:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+     .scale8 {
+    transition: 0.5s; /* Время эффекта */
+    border: 2px solid #c79f27;
+ position: absolute;
+  top: 1360px;
+  left: 1000px;
+  background-color: #c79f27;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 7px;
+   }
+   .scale8:hover {
+    transform: scale(1.18);
+    background:#905A08; /* Увеличиваем масштаб */
+   }
+	 .auth{
+		 position: fixed;
+		top: 24px;
+		right: 140px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+		text-decoration: underline;
+	 }
+	 .dyb{
+		position: fixed;
+		top: 20px;
+		right: 185px;
+		z-index: 14;
+	 }
+	.reest{
+		position: fixed;
+	 top: 24px;
+	 right: 16px;
+	 background: #483D8B; /* Цвет фона таблицы */
+	 color: black; /* Цвет текста */
+	 border-spacing: 0px; /* Расстояние между ячейками */
+	 font-family: pt sans,Arial,Helvetica,sans-serif;
+	 font-size: 18px;
+	 z-index: 14;
+	 text-decoration: underline;
+	}
+	.slesh{
+		 position: fixed;
+		top: 7px;
+		right: 132px;
+		background: #483D8B; /* Цвет фона таблицы */
+		color: black; /* Цвет текста */
+		border-spacing: 0px; /* Расстояние между ячейками */
+		font-family: pt sans,Arial,Helvetica,sans-serif;
+		font-size: 18px;
+		z-index: 14;
+	}
+   </style>
+</head>
+<body>
+<div class="menu"></div>
+<body>
+ <table class="a7">
+   <tr><th class="a8"><a href="головна.html"><font color="white" >ОСКАР</font></a></th>
+   <th class="a8" ><a href="головна%20-%20копия.html" ><Font color="white" class="a76">НОМІНАНТИ</Font></a></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия%20-%20копия.html"><font color="#c79f27">НОВИНИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2).html"><font color="white" >ДЕ і КОЛИ</font></th>
+   <th class="a8"><a href="головна%20-%20копия%20(2)%20-%20копия.html"><font color="white" >ДИВИТИСЬ</font></th>
+   <th class="a8"><a href="фільми.html"><font color="white" class="a76">ФІЛЬМИ</font></th>
+   <th class="a8"><a href="Прогнози.html"><font color="white" class="a76">ПРОГНОЗИ</font></th></tr>
+  </table>
+	<a href="http://localhost:82/php/" class="auth"><font color="#000000">ВХІД</font></a>
+	<img src="фото\dyb.png" width="25px" class="dyb">
+	<a href="http://localhost:82/php2/" class="reest"><font color="#000000">РЕЄСТРАЦІЯ</font></a>
+<p class="slesh">/</p>
+  <p class="a1">Новини</p>
+  <img src="фото\1.png" class="a2">
+    <img src="фото\2.png" class="a3">
+ <hr class="a4">
+
+   <div class="a48"></div>
+   <div class="a49"><p class="a22" align="center"><font size="3px"><a href="головна.html"><font color="white" size="4px">© Oscars</font></a> - сайт Американської премії кінематографічних мистецтв і наук (Academy Awards) в Україні, з 1939 року відомиї як «Оскар». Всі матеріали розміщені на сайті Оscars взяті з відкритих джерел і представлені відвідувачам виключно в ознайомлювальних цілях. <a href="https://www.oscars.org/"><font color="white" size="4">www.oscars.org</font></a> - офіційний сайт Американської кіноакадемії | <a href="https://www.oscars.org/oscars/ceremonies/2022"><font color="white" size="4px">www.oscar.go.com </font></a> - офіційний сайт останньої церемонії «Оскар».</font></p></div>
+   <div class="a14"><a href="новина17.html"><img src="фото\198.jpg" class="a59"></a><p class="a15" align="justify"><a href="новина17.html"><Font  class="a77">За перший вікенд прокату фільм «Джокер» заробив в Україні більше мільйона доларів</Font></a></p><p class="a16" align="left">Фільм Тодда Філліпса забезпечив кінотеатрам майже 60%...</p></div>
+<div class="a17"><a href="новина18.html"><img src="фото\199.jpg" class="a59"></a><p class="a18" align="justify"><a href="новина18.html"><Font  class="a77">Український фільм «Додому» ввійшов до лонглиста премії «Оскар»</Font></a></p><p class="a19" align="left">Американська кіноакадемія оприлюднила довгий список американської кінопремії «Оскар» у номінації «Міжнародний повнометражний фільм».</p></div>
+<div class="a20"><a href="новина19.html"><img src="фото\200.jpg" class="a59"></a><p class="a21" align="justify"><a href="новина19.html"><Font  class="a77">На «Оскар» від України цьогоріч претендує лише один фільм</Font></a></p><p class="a22" align="left">Український оскарівський комітет завершив прийом заявок для участі національних фільмів у відборі на висування фільму на премію «Оскар» Американської академії кінематографічних...</p></div>
+<div class="a23"><a href="новина20.html"><img src="фото\201.jpg" class="a59"></a><p class="a24" align="justify"><a href="новина20.html"><Font  class="a77">Режисер Девід Лінч отримає «Оскар» за внесок у кіномистецтво</Font></a></p><p class="a25" align="left">Рада Американської академії кіномистецтв вирішила нагородити кінорежисера Девіда Лінча почесним «Оскаром» за видатний внесок у кінематограф (Academy Honorary Award).</p></div>
+<a href="новина17.html" ><button class="scale" class="a77"><p class="a51"><font size="3px" >ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина18.html"><button class="scale2"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина19.html"><button class="scale3"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина20.html"><button class="scale4"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+
+
+<div class="b14"><a href="новина21.html"><img src="фото\202.jpg" class="a59"></a><p class="a15" align="justify"><a href="новина21.html"><Font  class="a77">Фільм Сергія Лозниці «Донбас» вперше покажуть по телебаченню</Font></a></p><p class="a16" align="left">Фільм Сергія Лозниці «Донбас» вперше покажуть по телебаченню. Він вийде в ефірі українського телебачення на телеканалі Суспільного мовлення 9 травня о 22:00.</p></div>
+<div class="b17"><a href="новина22.html"><img src="фото\203.jpg" class="a59"></a><p class="a18" align="justify"><a href="новина22.html"><Font  class="a77">Померла видатна французька режисерка Аньєс Варда</Font></a></p><p class="a19" align="left">Французька режисерка та сценаристка Аньєс Варда померла у віці 90 років. Про це повідомляє Le Monde. Причиною смерті стало онкологічне захворювання. У повідомлені йдеться, що...</p></div>
+<div class="b20"><a href="новина23.html"><img src="фото\204.jpg" class="a59"></a><p class="a21" align="justify"><a href="новина23.html"><Font  class="a77">Один із головних претендентів на «Оскар» отримав нагороду Гільдії режисерів США</Font></a></p><p class="a22" align="left">Мексиканський режисер Альфонсо Куарон отримав головну нагороду в номінації «Найкращий режисер» за драму «Рома» від Гільдії режисерів США. Про це йдеться на сайті...</p></div>
+<div class="b23"><a href="новина24.html"><img src="фото\205.jpg" class="a59"></a><p class="a24" align="justify"><a href="новина24.html"><Font  class="a77">Дональд Трамп може стати найгіршим актором року</Font></a></p><p class="a25" align="left">Організатори американської антипремії «Золота малина», яка вручається за найсумнівніші досягнення в кінематографі, назвали номінантів 2018 року. Ролик з повним списком претендентів опублікований на YouTube-каналі Razzie Channel.</p></div>
+<a href="новина21.html" ><button class="scale5" class="a77"><p class="a51"><font size="3px" >ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина22.html"><button class="scale6"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина23.html"><button class="scale7"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<a href="новина24.html"><button class="scale8"><p class="a51"><font size="3px">ЧИТАТИ ДАЛІ</p></font></button></a>
+<div class="z"><p class="a25" align="left">Ми активно стежимо за всім, що відбувається навколо головної кінопремії планети "Оскар". У цьому розділі ви зможете стежити за актуальними новинами та цікавими матеріалами.</p></div>
+<a href="головна%20-%20копия%20(2)%20-%20копия%20-%20копия.html" ><button class="c52"><p class="c51"><font size="5px" >1</p></font></button></a>
+<a href="новина%202.html" ><button class="c53" ><p class="c51"><font size="5px">2</p></font></button></a>
+<a href="новина%203.html"><button class="c54"><p class="c51"><font size="5px">3</p></font></button></a>
+<a href="новина%204.html"><button class="c55"><p class="c51"><font size="5px">4</p></font></button></a>
+     <div style="height:-150px"></div>
+
+   <div id="topNubex"><img src="фото\242.jpg" width="45px" height="45px" /></div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+</html>
